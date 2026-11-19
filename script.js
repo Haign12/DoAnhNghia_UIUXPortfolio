@@ -155,13 +155,14 @@
     search.focus();
   });
 
-  // Older links used industry groups; send them to the work-type group that now holds those projects.
+  // Older links used earlier group names; send them to the industry group that now holds those projects.
   const legacyGroups = {
-    "group-fintech": "group-product",
-    "group-enterprise": "group-product",
-    "group-healthcare": "group-product",
-    "group-education": "group-product",
-    "group-mobility": "group-web",
+    "group-product": "group-fintech",
+    "group-healthcare": "group-health-education",
+    "group-education": "group-health-education",
+    "group-web": "group-realestate",
+    "group-creative": "group-lifestyle",
+    "group-mobility": "group-lifestyle",
   };
   function revealAnchor() {
     const hash = window.location.hash.slice(1);
