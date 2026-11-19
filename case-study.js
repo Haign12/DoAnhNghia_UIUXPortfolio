@@ -37,7 +37,7 @@
     'case-study-nova.html': { live:'https://nova-gamma-eosin.vercel.app/', figma:'https://www.figma.com/design/AxsWZgEvTOkzOQB71iAdcx/Nova?node-id=4-2052&t=83Wo9YlCjxLTFzxv-1', source:'https://github.com/Ngh1aa/Nova' },
     'case-study-sentry.html': { live:'https://sentry-xi-lime.vercel.app/', figma:'https://www.figma.com/design/1W6rwPXiTfcZn6OhieVUDe/Sentry?node-id=0-1&t=BvIxuJu3KrFWy5Lg-1', source:'https://github.com/Ngh1aa/Sentry' },
     'case-study-luxroom.html': { live:'https://lux-room.vercel.app/', figma:'https://www.figma.com/design/50eyqHuzpiqIYoIT9ngwcT/LuxRoom?node-id=0-1&t=HPp6OlvriN9MeZCW-1', source:'https://github.com/Ngh1aa/LuxRoom' },
-    'case-study-atelier.html': { live:'https://atelier-henna-tau.vercel.app/', figma:'https://www.figma.com/design/Di6yDrXBRps8sN0hEZn66F/Atelier?m=auto&t=LykADgxvJ62WCIu7-1', source:'https://github.com/Ngh1aa/Atelier' },
+    'case-study-atelier.html': { live:'https://atelier-henna-tau.vercel.app/', figma:'https://www.figma.com/design/Di6yDrXBRps8sN0hEZn66F/Atelier?node-id=75-3&t=Rjoe3Smq5PpayEKI-1', source:'https://github.com/Ngh1aa/Atelier' },
     'case-study-capital-place.html': { live:'https://capital-weld.vercel.app/', figma:'https://www.figma.com/design/E7hF6BmKkaNv2AsJlF9kIi/RedesignCapital?m=auto&t=LykADgxvJ62WCIu7-1', source:'https://github.com/Ngh1aa/Capital' },
     'case-study-lava.html': { live:'https://ngh1aa.github.io/Lava/', source:'https://github.com/Ngh1aa/Lava' },
     'case-study-aegis.html': { live:'https://ngh1aa.github.io/Aegis/', source:'https://github.com/Ngh1aa/Aegis' },

@@ -19,7 +19,7 @@ const flagships = [
     "id": "atelier",
     "caseLabel": "Case study",
     "liveLabel": "Live prototype",
-    "figma": "https://www.figma.com/design/Di6yDrXBRps8sN0hEZn66F/Atelier?m=auto&t=LykADgxvJ62WCIu7-1",
+    "figma": "https://www.figma.com/design/Di6yDrXBRps8sN0hEZn66F/Atelier?node-id=75-3&t=Rjoe3Smq5PpayEKI-1",
     "source": "https://github.com/Ngh1aa/Atelier",
     "caseRoute": "case-study-atelier.html",
     "caseLiveLabel": "Live prototype ↗"
