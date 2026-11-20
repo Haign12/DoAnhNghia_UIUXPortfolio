@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="../../../../brand.css">
+<style>
+  :root { --ink: #111; --muted: #5C5C5C; --line: #d6d6d6; }
+  * { box-sizing: border-box; margin: 0; }
+  body { font-family: "Source Sans 3", sans-serif; background: #f4f3f1; padding: 32px; width: 900px; color: var(--ink); }
+  .opt { background: #fff; border: 1px solid var(--line); border-radius: 8px; padding: 28px 32px; margin-bottom: 20px; display: grid; grid-template-columns: 170px 1fr; align-items: center; gap: 24px; }
+  .opt h2 { font-family: "Source Serif 4", serif; font-weight: 400; font-size: 22px; }
+  .opt p { font-size: 13px; color: var(--muted); margin-top: 6px; line-height: 1.45; }
+  nav { display: flex; align-items: center; width: fit-content; position: relative; }
+
+  /* A: indexed — numbers from the portfolio's index language */
+  .a { gap: 28px; }
+  .a a { display: inline-flex; align-items: baseline; gap: 6px; font-size: 14px; color: var(--muted); text-decoration: none; }
+  .a a small { font-size: 11px; letter-spacing: .04em; font-variant-numeric: tabular-nums; color: #8a8a8a; }
+  .a a.on { color: var(--ink); }
+  .a a.on small { color: var(--ink); }
+  .a a.on::before { content: ""; width: 6px; height: 6px; border-radius: 50%; background: var(--ink); align-self: center; margin-right: 2px; }
+
+  /* B: segmented pill — a filled pill marks the current section */
+  .b { gap: 2px; padding: 4px; border: 1px solid var(--line); border-radius: 999px; }
+  .b a { padding: 8px 16px; border-radius: 999px; font-size: 14px; color: var(--muted); text-decoration: none; }
+  .b a.on { background: var(--ink); color: #fff; }
+
+  /* C: sliding bar — one 2px bar sits under the current item and slides between items */
+  .c { gap: 30px; position: relative; padding-bottom: 10px; border-bottom: 1px solid var(--line); }
+  .c a { font-size: 14px; color: var(--muted); text-decoration: none; }
+  .c a.on { color: var(--ink); }
+  .c i { position: absolute; bottom: -1px; height: 2px; background: var(--ink); }
+</style>
+</head>
+<body>
+  <div class="opt"><div><h2>A. Indexed</h2><p>Số thứ tự 01–04 theo ngôn ngữ chỉ mục của site; mục hiện tại có chấm đen.</p></div>
+    <nav class="a"><a href="#"><small>01</small>Experience</a><a href="#"><small>02</small>Education</a><a class="on" href="#"><small>03</small>Work</a><a href="#"><small>04</small>Contact</a></nav></div>
+  <div class="opt"><div><h2>B. Segmented</h2><p>Khung viên thuốc; mục hiện tại là viên đen chữ trắng, trượt sang khi cuộn.</p></div>
+    <nav class="b"><a href="#">Experience</a><a href="#">Education</a><a class="on" href="#">Work</a><a href="#">Contact</a></nav></div>
+  <div class="opt"><div><h2>C. Sliding bar</h2><p>Một vạch 2 px dưới mục hiện tại, trượt giữa các mục; chữ không đổi độ đậm.</p></div>
+    <nav class="c"><a href="#">Experience</a><a href="#">Education</a><a class="on" href="#" id="cOn">Work</a><a href="#">Contact</a><i id="bar"></i></nav></div>
+  <script>
+    const on = document.getElementById('cOn'), bar = document.getElementById('bar'), nav = on.parentElement;
+    bar.style.left = on.offsetLeft + 'px'; bar.style.width = on.offsetWidth + 'px';
+  </script>
+</body>
+</html>

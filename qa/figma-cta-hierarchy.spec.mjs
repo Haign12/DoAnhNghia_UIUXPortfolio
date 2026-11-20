@@ -114,10 +114,10 @@ for (const item of flagships) {
         await details.locator('summary').focus();
         await page.keyboard.press('Enter');
         await expect(details).toHaveAttribute('open', '');
-        await expect(details.locator('[data-a27-field]')).toHaveCount(11);
+        // Snapshot cells that only said NOT EXPLICIT / NOT DOCUMENTED were removed (2026-11-20); the count now varies per case.
+        expect(await details.locator('[data-a27-field]').count()).toBeGreaterThanOrEqual(5);
         await expect(details.locator('.measurement-targets')).toContainText('TARGET — NOT A RESULT');
-        if (item.id !== 'nova') await expect(details.locator('#project-30-sec-proof .project-recruiter-proof-grid > article')).toHaveCount(6);
-        else await expect(details.locator('[data-a27-field="EVIDENCE"]')).toContainText('TWO ROUNDS');
+        if (item.id === 'nova') await expect(details.locator('[data-a27-field="EVIDENCE"]')).toContainText('TWO ROUNDS');
         const axe = await new AxeBuilder({ page }).analyze();
         expect(axe.violations.filter(v => ['serious', 'critical'].includes(v.impact))).toEqual([]);
         await details.locator('summary').focus();
@@ -145,7 +145,7 @@ for (const item of flagships) {
 test('evidence deep links open the audit below the sticky navigation', async ({ page }) => {
   await page.setViewportSize({ width: 390, height: 844 });
   for (const item of flagships) {
-    const targetId = item.id === 'nova' ? 'case-evidence' : 'project-30-sec-proof';
+    const targetId = 'case-evidence';
     await page.goto(`${baseURL}/${item.caseRoute}#${targetId}`, { waitUntil: 'networkidle' });
     await expect(page.locator('#case-evidence')).toHaveAttribute('open', '');
     const bounds = await page.evaluate(targetId => ({

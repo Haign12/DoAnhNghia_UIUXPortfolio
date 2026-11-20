@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Direction B, Recruiter index</title>
+<link rel="stylesheet" href="../../../../brand.css">
+<link rel="stylesheet" href="directions.css">
+<style>
+  .layout { display: grid; grid-template-columns: minmax(0, 4fr) minmax(0, 8fr); gap: 48px; padding-block: 56px 96px; align-items: start; }
+  .id { position: sticky; top: 32px; }
+  .id h1 { font-size: 40px; font-weight: 700; letter-spacing: -0.03em; line-height: 1.1; }
+  .id .role { font-size: 22px; margin-top: 4px; }
+  .id .lead { margin-top: 24px; font-size: 17px; color: #333; }
+  .id dl { margin-top: 28px; border-top: 1px solid var(--line); }
+  .id .fact { padding-block: 12px; border-bottom: 1px solid var(--line); }
+  .id .actions { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 24px; }
+  .list h2, .exp h2 { font-size: 15px; font-weight: 600; text-transform: none; padding-bottom: 12px; border-bottom: 1px solid var(--ink); }
+  .row { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 3fr); gap: 28px; padding-block: 28px; border-bottom: 1px solid var(--line); }
+  .row h3 { font-size: 26px; font-weight: 700; letter-spacing: -0.02em; margin-top: 4px; }
+  .row .outcome { margin-top: 8px; font-size: 16px; }
+  .row .meta { margin-top: 12px; font-size: 14px; color: var(--muted); }
+  .row .links { display: flex; gap: 16px; margin-top: 14px; font-size: 15px; font-weight: 600; }
+  .exp { margin-top: 56px; }
+  .exp li { display: grid; grid-template-columns: 1.3fr 1fr auto; gap: 16px; padding-block: 14px; border-bottom: 1px solid var(--line); }
+  .exp ol { list-style: none; padding: 0; }
+  @media (max-width: 839px) {
+    .layout, .row { grid-template-columns: minmax(0, 1fr); gap: 20px; }
+    .id { position: static; }
+    .exp li { grid-template-columns: 1fr; gap: 2px; }
+  }
+</style>
+</head>
+<body>
+<header class="nav"><div class="shell"><span class="mark" aria-label="Do Anh Nghia"></span>
+  <nav class="nav-links"><a href="#work">Work</a><a href="#experience">Experience</a><a href="#">Resume</a></nav></div></header>
+<main class="shell layout">
+  <aside class="id">
+    <h1>Do Anh Nghia</h1>
+    <p class="role">Product Designer</p>
+    <p class="lead">I make complex money flows and operational tools clear, from information architecture to coded prototypes.</p>
+    <dl>
+      <div class="fact"><dt class="label">Based in</dt><dd>Ho Chi Minh City, Vietnam (GMT+7)</dd></div>
+      <div class="fact"><dt class="label">Status</dt><dd>Open to remote product design roles</dd></div>
+      <div class="fact"><dt class="label">Experience</dt><dd>2+ years in agency and product teams</dd></div>
+      <div class="fact"><dt class="label">Education</dt><dd>HCMUS and Université Claude Bernard Lyon 1</dd></div>
+    </dl>
+    <div class="actions"><a class="btn primary" href="#">Email me</a><a class="btn" href="#">Resume</a></div>
+  </aside>
+  <div>
+    <section class="list" id="work">
+      <h2>Selected work</h2>
+      <article class="row"><div class="thumb"><img src="../../../../assets/images/thumbs/nova-1440.webp" alt=""></div><div>
+        <p class="label">Consumer fintech</p><h3>Nova</h3>
+        <p class="outcome">Shows what is safe to spend before bills land, refined over two research rounds.</p>
+        <p class="meta">Product design, research and front-end prototype</p>
+        <p class="links"><a href="#">Case study</a><a href="#">Prototype</a></p></div></article>
+      <article class="row"><div class="thumb"><img src="../../../../assets/images/thumbs/sentry-1440.webp" alt=""></div><div>
+        <p class="label">Fraud operations</p><h3>Sentry</h3>
+        <p class="outcome">One investigation workspace for alert priority, evidence, decisions and audit recovery.</p>
+        <p class="meta">Product design for analyst workflows</p>
+        <p class="links"><a href="#">Case study</a><a href="#">Prototype</a></p></div></article>
+      <article class="row"><div class="thumb"><img src="../../../../assets/images/thumbs/flux-1440.webp" alt=""></div><div>
+        <p class="label">Payments platform</p><h3>Flux</h3>
+        <p class="outcome">Multi-currency payments with a visible approval chain and clear exception states.</p>
+        <p class="meta">Product design and workflow states</p>
+        <p class="links"><a href="#">Case study</a><a href="#">Prototype</a></p></div></article>
+      <article class="row"><div class="thumb"><img src="../../../../assets/images/thumbs/luxroom-1440.webp" alt=""></div><div>
+        <p class="label">Furniture e-commerce</p><h3>LuxRoom</h3>
+        <p class="outcome">Carries room fit and configuration from discovery through checkout.</p>
+        <p class="meta">UX and UI design with a responsive prototype</p>
+        <p class="links"><a href="#">Case study</a><a href="#">Prototype</a></p></div></article>
+    </section>
+    <section class="exp" id="experience">
+      <h2>Experience</h2>
+      <ol>
+        <li><strong>MangoAds Agency</strong><span>UI/UX Designer</span><span class="label">Dec 2025 – Sep 2026</span></li>
+        <li><strong>Tikera Technology</strong><span>UI/UX Designer</span><span class="label">Jan – Oct 2025</span></li>
+        <li><strong>Trésor Solution</strong><span>UI/UX Design Intern, remote</span><span class="label">Sep – Dec 2024</span></li>
+      </ol>
+    </section>
+  </div>
+</main>
+</body>
+</html>

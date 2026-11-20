@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Direction C, Case first</title>
+<link rel="stylesheet" href="../../../../brand.css">
+<link rel="stylesheet" href="directions.css">
+<style>
+  .intro { display: grid; grid-template-columns: minmax(0, 8fr) minmax(0, 4fr); gap: 48px; padding-block: 64px 48px; align-items: end; }
+  .intro h1 { font-size: clamp(34px, 3.6vw, 48px); font-weight: 600; line-height: 1.2; letter-spacing: -0.03em; max-width: 24ch; }
+  .intro .facts { font-size: 15px; color: #333; }
+  .intro .facts p + p { margin-top: 6px; }
+  .intro .actions { display: flex; gap: 12px; margin-top: 20px; }
+  .spot { display: grid; grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); gap: 48px; padding: 40px; background: #f3f3f1; border-radius: 8px; align-items: center; }
+  .spot h2 { font-family: var(--serif); font-weight: 400; font-size: 56px; letter-spacing: -0.04em; line-height: 1.05; margin-top: 6px; }
+  .spot .problem { margin-top: 16px; font-size: 18px; }
+  .spot dl { display: grid; grid-template-columns: 1fr 1fr; gap: 16px 24px; margin-top: 24px; padding-top: 20px; border-top: 1px solid var(--line); }
+  .spot .actions { display: flex; gap: 12px; margin-top: 28px; }
+  .more { padding-block: 72px 96px; }
+  .more h2 { font-size: 15px; font-weight: 600; padding-bottom: 12px; border-bottom: 1px solid var(--ink); }
+  .row { display: grid; grid-template-columns: 220px minmax(0, 1fr) auto; gap: 32px; align-items: center; padding-block: 20px; border-bottom: 1px solid var(--line); }
+  .row h3 { font-family: var(--serif); font-weight: 400; font-size: 28px; letter-spacing: -0.03em; }
+  .row .outcome { font-size: 16px; margin-top: 4px; }
+  .row .links { display: flex; gap: 16px; font-size: 15px; font-weight: 600; }
+  .strip { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 32px; padding-bottom: 96px; }
+  .strip h2 { grid-column: 1 / -1; font-size: 15px; font-weight: 600; padding-bottom: 12px; border-bottom: 1px solid var(--ink); }
+  @media (max-width: 839px) {
+    .intro, .spot, .strip { grid-template-columns: minmax(0, 1fr); gap: 24px; }
+    .spot { padding: 20px; }
+    .spot h2 { font-size: 40px; }
+    .row { grid-template-columns: 120px minmax(0, 1fr); gap: 16px; }
+    .row .links { grid-column: 2; }
+  }
+</style>
+</head>
+<body>
+<header class="nav"><div class="shell"><span class="mark" aria-label="Do Anh Nghia"></span>
+  <nav class="nav-links"><a href="#work">Work</a><a href="#experience">Experience</a><a href="#">Resume</a><a href="#">Contact</a></nav></div></header>
+<main class="shell">
+  <section class="intro">
+    <div><p class="label">Do Anh Nghia, Product Designer</p>
+      <h1>I make complex money flows and operational tools clear, from structure to coded prototype.</h1></div>
+    <div class="facts">
+      <p>Ho Chi Minh City, Vietnam (GMT+7)</p>
+      <p>Open to remote product design roles</p>
+      <p>Studied IT at HCMUS and Université Claude Bernard Lyon 1</p>
+      <div class="actions"><a class="btn primary" href="#">Email me</a><a class="btn" href="#">Resume</a></div>
+    </div>
+  </section>
+
+  <section class="spot" id="work">
+    <div class="thumb"><img src="../../../../assets/images/thumbs/nova-1440.webp" alt=""></div>
+    <div>
+      <p class="label">Featured case, consumer fintech</p>
+      <h2>Nova</h2>
+      <p class="problem">A bank balance does not say what is safe to spend. Nova shows money already promised to bills and savings before it is spent.</p>
+      <dl>
+        <div class="fact"><dt>Role</dt><dd>Product design, research, front-end prototype</dd></div>
+        <div class="fact"><dt>Evidence</dt><dd>Two research rounds, 10 self-reports</dd></div>
+        <div class="fact"><dt>Scope</dt><dd>Home, payments, transfers, recovery states</dd></div>
+        <div class="fact"><dt>Type</dt><dd>Independent concept</dd></div>
+      </dl>
+      <div class="actions"><a class="btn primary" href="#">Read case</a><a class="btn" href="#">Open prototype</a></div>
+    </div>
+  </section>
+
+  <section class="more">
+    <h2>More selected work</h2>
+    <article class="row"><div class="thumb"><img src="../../../../assets/images/thumbs/sentry-720.webp" alt=""></div>
+      <div><p class="label">Fraud operations</p><h3>Sentry</h3><p class="outcome">One investigation workspace for alert priority, evidence, decisions and audit recovery.</p></div>
+      <p class="links"><a href="#">Case study</a><a href="#">Prototype</a></p></article>
+    <article class="row"><div class="thumb"><img src="../../../../assets/images/thumbs/flux-720.webp" alt=""></div>
+      <div><p class="label">Payments platform</p><h3>Flux</h3><p class="outcome">Multi-currency payments with a visible approval chain and clear exception states.</p></div>
+      <p class="links"><a href="#">Case study</a><a href="#">Prototype</a></p></article>
+    <article class="row"><div class="thumb"><img src="../../../../assets/images/thumbs/luxroom-720.webp" alt=""></div>
+      <div><p class="label">Furniture e-commerce</p><h3>LuxRoom</h3><p class="outcome">Carries room fit and configuration from discovery through checkout.</p></div>
+      <p class="links"><a href="#">Case study</a><a href="#">Prototype</a></p></article>
+  </section>
+
+  <section class="strip" id="experience">
+    <h2>Experience</h2>
+    <div><strong>MangoAds Agency</strong><p>UI/UX Designer</p><p class="label">Dec 2025 – Sep 2026</p></div>
+    <div><strong>Tikera Technology</strong><p>UI/UX Designer</p><p class="label">Jan – Oct 2025</p></div>
+    <div><strong>Trésor Solution</strong><p>UI/UX Design Intern, remote</p><p class="label">Sep – Dec 2024</p></div>
+  </section>
+</main>
+</body>
+</html>

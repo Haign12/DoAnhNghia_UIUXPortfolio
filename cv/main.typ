@@ -1,7 +1,7 @@
 #import "@preview/basic-resume:0.2.9": *
 
 #let name = "Do Anh Nghia"
-#let location = "Ho Chi Minh City, Vietnam"
+#let location = "Ho Chi Minh City, Vietnam (GMT+7)"
 #let email = "anhnghia9a633@gmail.com"
 #let phone = "+84 7988 760 74"
 #let personal-site = "do-anh-nghia-uiux-portfolio.vercel.app"
@@ -13,7 +13,7 @@
   phone: phone,
   personal-site: personal-site,
   accent-color: "#111111",
-  font: "Noto Sans",
+  font: "Source Sans 3",
   paper: "a4",
   author-position: left,
   personal-info-position: left,
@@ -21,7 +21,7 @@
 
 #show heading: set text(font: "Libertinus Serif")
 
-_Product Designer · UI/UX · Design-to-Code with 1+ year of professional experience across agency and product teams, focused on decision-heavy journeys, interaction states, responsive systems and developer-ready handoff._
+*Product Designer* with 2+ years of professional experience across agency and product teams. I design money flows, operational tools and commerce journeys, from information architecture and interaction states to coded prototypes and developer handoff. Open to remote roles.
 
 == Experience
 
@@ -29,62 +29,78 @@ _Product Designer · UI/UX · Design-to-Code with 1+ year of professional experi
   title: "UI/UX Designer",
   location: "Full-time",
   company: "MangoAds — SEO Optimization & Web Design Agency",
-  dates: dates-helper(start-date: "May 2026", end-date: "Sep 2026"),
+  dates: dates-helper(start-date: "Dec 2025", end-date: "Sep 2026"),
 )
-- Led UI/UX redesign and IA across 8+ client-facing web platforms, standardizing reusable components, responsive rules and handoff.
+- Redesigned information architecture and UI across 8+ client-facing web platforms, standardizing reusable components, responsive rules and developer handoff.
+- Translated business requirements into user flows, responsive UI systems and interaction states.
 
 #work(
   title: "UI/UX Designer",
   location: "Full-time",
   company: "Tikera Technology & Brand Development",
-  dates: dates-helper(start-date: "Dec 2025", end-date: "Apr 2026"),
+  dates: dates-helper(start-date: "Jan 2025", end-date: "Oct 2025"),
 )
 - Structured user flows, wireframes and design systems for 15+ product journeys, including loading, empty, error and edge-case states.
 
 #work(
-  title: "Intern UI/UX Designer",
+  title: "UI/UX Design Intern",
   location: "Remote",
-  company: "Trésor Solution Company",
-  dates: dates-helper(start-date: "Sep 2025", end-date: "Dec 2025"),
+  company: "Trésor Solution",
+  dates: dates-helper(start-date: "Sep 2024", end-date: "Dec 2024"),
 )
-- Partnered with engineers on responsive product flows, reusable UI patterns and design-to-code specifications for MVP builds.
+- Supported responsive MVP flows, reusable UI patterns and developer handoff.
 
 == Selected Product Work
 
 #project(
   name: "LuxRoom — Furniture E-commerce",
-  role: "Product Design · Commerce UX",
+  role: "Product Design, Commerce UX",
   dates: "2026",
-  url: "do-anh-nghia-uiux-portfolio.vercel.app/case-study-luxroom.html",
 )
 - *Problem:* Premium imagery creates desire but does not resolve room fit, dimensions, materials, access and delivery uncertainty. *Outcome:* Designed a continuous decision journey across discovery, comparison, saved configuration, cart and checkout, with explicit recovery when purchase confidence breaks down.
 
 #project(
-  name: "Nova — Consumer Fintech",
-  role: "Product Design · Financial Decision UX",
+  name: "Flux — B2B Payments",
+  role: "Product Design, Finance Operations",
   dates: "2026",
-  url: "do-anh-nghia-uiux-portfolio.vercel.app/case-study-nova.html",
 )
-- *Problem:* Balance alone does not show what is truly safe to spend after bills, savings goals and protected buffers. *Outcome:* Reframed the product around a forward-looking Money Horizon and iterated key decisions using 10 verified direct-user/self-report records across two rounds.
+- *Problem:* Payment approvals, permissions and the decision trail need to stay in context for finance teams moving money across currencies. *Outcome:* Designed a payments workspace with a visible approval control chain, role-based permissions and clear exception states, delivered as a working prototype.
+
+#project(
+  name: "Atelier — Fashion E-commerce",
+  role: "Product Design, Art Direction",
+  dates: "2026",
+)
+- *Problem:* Fashion commerce has to balance editorial expression with product discovery and shopping clarity. *Outcome:* Designed a mobile-first storefront where editorial storytelling supports discovery, evaluation and purchase, delivered as a live prototype.
 
 #project(
   name: "Sentry — B2B Fraud Operations",
-  role: "Product Design · Operational Systems",
+  role: "Product Design, Operational Systems",
   dates: "2026",
-  url: "do-anh-nghia-uiux-portfolio.vercel.app/case-study-sentry.html",
 )
 - *Problem:* Fraud analysts make high-stakes decisions while evidence is fragmented across systems and difficult to reconstruct. *Outcome:* Unified alert priority, forensic evidence, decision controls, rationale and audit recovery in one investigation model with conflict, escalation and failure states.
 
-#project(
-  name: "VAS Education — Website Redesign",
-  role: "IA · Decision-support UX",
-  dates: "2026",
-  url: "do-anh-nghia-uiux-portfolio.vercel.app/case-study-vas-education.html",
+== Education
+
+#edu(
+  institution: "University of Science, VNU-HCM (HCMUS)",
+  location: "Ho Chi Minh City, Vietnam",
+  dates: dates-helper(start-date: "2021", end-date: "2026"),
+  degree: "Information Technology",
 )
-- *Problem:* Families must compare programmes, campuses, student support and admissions without a clear path from exploration to action. *Outcome:* Restructured the experience from programme/campus discovery through decision support to admissions or visit requests within one responsive design system.
 
-== Education & Skills
+#edu(
+  institution: "Université Claude Bernard Lyon 1",
+  location: "Lyon, France",
+  dates: dates-helper(start-date: "2021", end-date: "2025"),
+  degree: "Information Technology",
+)
 
-*Education:* University of Science — HCMUS, Information Technology (2021–2026) · Claude Bernard University Lyon 1, Information Technology (2021–2025) · Foundations of Google UX Design (2026).
+- Google UX Design Foundations (2026)
 
-*Skills:* Product strategy, IA & user flows, interaction/state design, design systems, responsive UI, research, usability testing, requirements and acceptance criteria. *Design-to-code:* Figma, HTML/CSS/JS, React/Next.js prototypes (AI-assisted), Git/GitHub, Playwright + axe-core. *Workflow:* UIUX Factory for repository grounding, implementation support, browser QA and evidence-aware iteration.
+== Skills
+
+- *Product design:* product thinking, information architecture and user flows, interaction and state design, design systems, responsive UI, research, usability testing.
+- *Business analysis:* requirements gathering, user stories, acceptance criteria.
+- *Design to code:* Figma, HTML, CSS and JavaScript, React and Next.js prototypes (AI-assisted), Git and GitHub, Playwright and axe-core.
+- *Workflow:* UIUX Factory for repository grounding, implementation support, browser QA and evidence-aware iteration.

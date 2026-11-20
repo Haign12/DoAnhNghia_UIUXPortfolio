@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Direction A, Editorial evolution</title>
+<link rel="stylesheet" href="../../../../brand.css">
+<link rel="stylesheet" href="directions.css">
+<style>
+  .hero { display: grid; grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); gap: 64px; padding-block: 88px 72px; align-items: end; }
+  .hero h1 { font-family: var(--serif); font-weight: 400; font-size: clamp(56px, 7vw, 104px); line-height: 1.04; letter-spacing: -0.05em; }
+  .hero h1 em { font-style: italic; }
+  .hero .lead { margin-top: 32px; max-width: 34ch; font-size: 20px; color: #333; }
+  .facts { border-top: 1px solid var(--ink); }
+  .facts .fact { display: grid; grid-template-columns: 120px 1fr; gap: 16px; padding-block: 14px; border-bottom: 1px solid var(--line); }
+  .hero .actions { display: flex; gap: 12px; margin-top: 24px; }
+  .section-head { display: flex; align-items: baseline; justify-content: space-between; border-top: 1px solid var(--line); padding-top: 32px; margin-bottom: 40px; }
+  .section-head h2 { font-family: var(--serif); font-weight: 400; font-size: 44px; letter-spacing: -0.04em; }
+  .work { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 64px 32px; padding-bottom: 96px; }
+  .card h3 { font-family: var(--serif); font-weight: 400; font-size: 32px; letter-spacing: -0.03em; margin-top: 20px; }
+  .card .outcome { margin-top: 8px; font-size: 18px; }
+  .card .role { margin-top: 12px; font-size: 15px; color: var(--muted); }
+  .card .links { display: flex; gap: 20px; margin-top: 16px; font-size: 15px; font-weight: 600; }
+  .exp { display: grid; grid-template-columns: minmax(0, 4fr) minmax(0, 8fr); gap: 32px; padding-bottom: 96px; }
+  .exp ol { list-style: none; padding: 0; }
+  .exp li { display: grid; grid-template-columns: 1.2fr 1fr auto; gap: 16px; padding-block: 16px; border-bottom: 1px solid var(--line); }
+  @media (max-width: 839px) {
+    .hero, .work, .exp { grid-template-columns: minmax(0, 1fr); gap: 40px; }
+    .hero { padding-block: 48px; }
+    .exp li { grid-template-columns: 1fr; gap: 2px; }
+  }
+</style>
+</head>
+<body>
+<header class="nav"><div class="shell"><span class="mark" aria-label="Do Anh Nghia"></span>
+  <nav class="nav-links"><a href="#work">Work</a><a href="#experience">Experience</a><a href="#">Resume</a><a href="#">Contact</a></nav></div></header>
+<main class="shell">
+  <section class="hero">
+    <div>
+      <p class="label">Product Designer</p>
+      <h1>Complexity,<br><em>made clear.</em></h1>
+      <p class="lead">I design money flows, operational tools and multi-role products, from information architecture to coded prototypes.</p>
+    </div>
+    <div>
+      <dl class="facts">
+        <div class="fact"><dt>Based in</dt><dd>Ho Chi Minh City, Vietnam</dd></div>
+        <div class="fact"><dt>Working hours</dt><dd>GMT+7, overlap with Europe and APAC</dd></div>
+        <div class="fact"><dt>Experience</dt><dd>2+ years in agency and product teams</dd></div>
+        <div class="fact"><dt>Education</dt><dd>IT at HCMUS and Université Claude Bernard Lyon 1</dd></div>
+        <div class="fact"><dt>Status</dt><dd>Open to remote product design roles</dd></div>
+      </dl>
+      <div class="actions"><a class="btn primary" href="#">Email me</a><a class="btn" href="#">View resume</a></div>
+    </div>
+  </section>
+
+  <div class="section-head" id="work"><h2>Selected work</h2><span class="label">4 of 17 projects</span></div>
+  <section class="work">
+    <article class="card"><div class="thumb"><img src="../../../../assets/images/thumbs/nova-1440.webp" alt=""></div>
+      <p class="label" style="margin-top:20px">Consumer fintech</p><h3>Nova</h3>
+      <p class="outcome">Shows what is safe to spend before bills land, refined over two research rounds.</p>
+      <p class="role">Product design, research and front-end prototype</p>
+      <p class="links"><a href="#">Case study</a><a href="#">Prototype</a></p></article>
+    <article class="card"><div class="thumb"><img src="../../../../assets/images/thumbs/sentry-1440.webp" alt=""></div>
+      <p class="label" style="margin-top:20px">Fraud operations</p><h3>Sentry</h3>
+      <p class="outcome">One investigation workspace for alert priority, evidence, decisions and audit recovery.</p>
+      <p class="role">Product design for analyst workflows and decision states</p>
+      <p class="links"><a href="#">Case study</a><a href="#">Prototype</a></p></article>
+    <article class="card"><div class="thumb"><img src="../../../../assets/images/thumbs/flux-1440.webp" alt=""></div>
+      <p class="label" style="margin-top:20px">Payments platform</p><h3>Flux</h3>
+      <p class="outcome">Multi-currency payments with a visible approval chain and clear exception states.</p>
+      <p class="role">Product design, information architecture and workflow states</p>
+      <p class="links"><a href="#">Case study</a><a href="#">Prototype</a></p></article>
+    <article class="card"><div class="thumb"><img src="../../../../assets/images/thumbs/luxroom-1440.webp" alt=""></div>
+      <p class="label" style="margin-top:20px">Furniture e-commerce</p><h3>LuxRoom</h3>
+      <p class="outcome">Carries room fit and configuration from discovery through checkout.</p>
+      <p class="role">UX and UI design with a responsive prototype</p>
+      <p class="links"><a href="#">Case study</a><a href="#">Prototype</a></p></article>
+  </section>
+
+  <section class="exp" id="experience">
+    <h2 style="font-family:var(--serif);font-weight:400;font-size:32px">Experience</h2>
+    <ol>
+      <li><strong>MangoAds Agency</strong><span>UI/UX Designer</span><span class="label">Dec 2025 – Sep 2026</span></li>
+      <li><strong>Tikera Technology</strong><span>UI/UX Designer</span><span class="label">Jan – Oct 2025</span></li>
+      <li><strong>Trésor Solution</strong><span>UI/UX Design Intern, remote</span><span class="label">Sep – Dec 2024</span></li>
+    </ol>
+  </section>
+</main>
+</body>
+</html>

@@ -1,0 +1,1532 @@
+[
+ {
+  "setup": "desktop-1x",
+  "page": "index.html",
+  "src": "assets/images/thumbs/luxroom-960.webp",
+  "cssW": 815,
+  "natW": 960,
+  "need": 815,
+  "ratio": 1.18
+ },
+ {
+  "setup": "desktop-1x",
+  "page": "index.html",
+  "src": "assets/images/thumbs/flux-960.webp",
+  "cssW": 815,
+  "natW": 960,
+  "need": 815,
+  "ratio": 1.18
+ },
+ {
+  "setup": "desktop-1x",
+  "page": "index.html",
+  "src": "assets/images/thumbs/atelier-960.webp",
+  "cssW": 815,
+  "natW": 960,
+  "need": 815,
+  "ratio": 1.18
+ },
+ {
+  "setup": "desktop-1x",
+  "page": "index.html",
+  "src": "assets/images/thumbs/sentry-960.webp",
+  "cssW": 815,
+  "natW": 960,
+  "need": 815,
+  "ratio": 1.18
+ },
+ {
+  "setup": "desktop-1x",
+  "page": "index.html",
+  "src": "assets/images/thumbs/nova-960.webp",
+  "cssW": 411,
+  "natW": 960,
+  "need": 411,
+  "ratio": 2.34
+ },
+ {
+  "setup": "desktop-1x",
+  "page": "index.html",
+  "src": "assets/images/thumbs/flowcrm-960.webp",
+  "cssW": 411,
+  "natW": 960,
+  "need": 411,
+  "ratio": 2.34
+ },
+ {
+  "setup": "desktop-1x",
+  "page": "index.html",
+  "src": "assets/images/thumbs/access-960.webp",
+  "cssW": 411,
+  "natW": 960,
+  "need": 411,
+  "ratio": 2.34
+ },
+ {
+  "setup": "desktop-1x",
+  "page": "index.html",
+  "src": "assets/images/thumbs/capital-place-960.webp",
+  "cssW": 411,
+  "natW": 960,
+  "need": 411,
+  "ratio": 2.34
+ },
+ {
+  "setup": "desktop-1x",
+  "page": "index.html",
+  "src": "assets/images/thumbs/lava-960.webp",
+  "cssW": 411,
+  "natW": 960,
+  "need": 411,
+  "ratio": 2.34
+ },
+ {
+  "setup": "desktop-1x",
+  "page": "index.html",
+  "src": "assets/images/thumbs/qtsc-960.webp",
+  "cssW": 411,
+  "natW": 960,
+  "need": 411,
+  "ratio": 2.34
+ },
+ {
+  "setup": "desktop-1x",
+  "page": "index.html",
+  "src": "assets/images/thumbs/violet-marketplace-960.webp",
+  "cssW": 411,
+  "natW": 960,
+  "need": 411,
+  "ratio": 2.34
+ },
+ {
+  "setup": "desktop-1x",
+  "page": "index.html",
+  "src": "assets/images/thumbs/careflow-960.webp",
+  "cssW": 411,
+  "natW": 960,
+  "need": 411,
+  "ratio": 2.34
+ },
+ {
+  "setup": "desktop-1x",
+  "page": "index.html",
+  "src": "assets/images/thumbs/vas-education-960.webp",
+  "cssW": 411,
+  "natW": 960,
+  "need": 411,
+  "ratio": 2.34
+ },
+ {
+  "setup": "desktop-1x",
+  "page": "index.html",
+  "src": "assets/images/thumbs/cennext-960.webp",
+  "cssW": 411,
+  "natW": 960,
+  "need": 411,
+  "ratio": 2.34
+ },
+ {
+  "setup": "desktop-1x",
+  "page": "index.html",
+  "src": "assets/images/thumbs/aegis-960.webp",
+  "cssW": 411,
+  "natW": 960,
+  "need": 411,
+  "ratio": 2.34
+ },
+ {
+  "setup": "desktop-1x",
+  "page": "index.html",
+  "src": "assets/images/thumbs/voltis-960.webp",
+  "cssW": 411,
+  "natW": 960,
+  "need": 411,
+  "ratio": 2.34
+ },
+ {
+  "setup": "desktop-1x",
+  "page": "index.html",
+  "src": "assets/images/thumbs/lumen-960.webp",
+  "cssW": 411,
+  "natW": 960,
+  "need": 411,
+  "ratio": 2.34
+ },
+ {
+  "setup": "desktop-1x",
+  "page": "index.html",
+  "src": "assets/images/avatar.webp",
+  "cssW": 64,
+  "natW": 1000,
+  "need": 64,
+  "ratio": 15.63
+ },
+ {
+  "setup": "desktop-1x",
+  "page": "case-study-access.html",
+  "src": "thumbnail/access.png",
+  "cssW": 1238,
+  "natW": 3488,
+  "need": 1238,
+  "ratio": 2.82
+ },
+ {
+  "setup": "desktop-1x",
+  "page": "case-study-aegis.html",
+  "src": "assets/images/aegis.jpg",
+  "cssW": 1238,
+  "natW": 2880,
+  "need": 1238,
+  "ratio": 2.33
+ },
+ {
+  "setup": "desktop-1x",
+  "page": "case-study-aegis.html",
+  "src": "assets/images/prototype-captures/aegis-tunnel.webp",
+  "cssW": 817,
+  "natW": 2880,
+  "need": 817,
+  "ratio": 3.53
+ },
+ {
+  "setup": "desktop-1x",
+  "page": "case-study-aegis.html",
+  "src": "assets/images/prototype-captures/aegis-library.webp",
+  "cssW": 817,
+  "natW": 2880,
+  "need": 817,
+  "ratio": 3.53
+ },
+ {
+  "setup": "desktop-1x",
+  "page": "case-study-atelier.html",
+  "src": "assets/images/prototype-captures/atelier-desktop.webp",
+  "cssW": 1238,
+  "natW": 2880,
+  "need": 1238,
+  "ratio": 2.33
+ },
+ {
+  "setup": "desktop-1x",
+  "page": "case-study-atelier.html",
+  "src": "assets/images/prototype-captures/atelier-desktop.webp",
+  "cssW": 817,
+  "natW": 2880,
+  "need": 817,
+  "ratio": 3.53
+ },
+ {
+  "setup": "desktop-1x",
+  "page": "case-study-capital-place.html",
+  "src": "assets/images/capital-place.jpg",
+  "cssW": 1238,
+  "natW": 2880,
+  "need": 1238,
+  "ratio": 2.33
+ },
+ {
+  "setup": "desktop-1x",
+  "page": "case-study-capital-place.html",
+  "src": "assets/images/prototype-captures/capital.webp",
+  "cssW": 817,
+  "natW": 2880,
+  "need": 817,
+  "ratio": 3.53
+ },
+ {
+  "setup": "desktop-1x",
+  "page": "case-study-careflow.html",
+  "src": "assets/images/prototype-captures/careflow-desktop.webp",
+  "cssW": 1238,
+  "natW": 2880,
+  "need": 1238,
+  "ratio": 2.33
+ },
+ {
+  "setup": "desktop-1x",
+  "page": "case-study-careflow.html",
+  "src": "assets/images/prototype-captures/careflow-patient.webp",
+  "cssW": 817,
+  "natW": 1950,
+  "need": 817,
+  "ratio": 2.39
+ },
+ {
+  "setup": "desktop-1x",
+  "page": "case-study-cennext.html",
+  "src": "https://images.unsplash.com/photo-1645258044234-f4ba2655baf1?auto=format&fit=crop&fm=jpg&q=80&w=2880",
+  "cssW": 1238,
+  "natW": 2880,
+  "need": 1238,
+  "ratio": 2.33
+ },
+ {
+  "setup": "desktop-1x",
+  "page": "case-study-cennext.html",
+  "src": "https://images.pexels.com/photos/32208781/pexels-photo-32208781/free-photo-of-technician-repairing-industrial-machine-equipment.jpeg?auto=compress&w=2400",
+  "cssW": 817,
+  "natW": 2268,
+  "need": 817,
+  "ratio": 2.78
+ },
+ {
+  "setup": "desktop-1x",
+  "page": "case-study-docflow-ai.html",
+  "src": "assets/images/prototype-captures/docflow-ai-desktop.webp",
+  "cssW": 1238,
+  "natW": 2880,
+  "need": 1238,
+  "ratio": 2.33
+ },
+ {
+  "setup": "desktop-1x",
+  "page": "case-study-flowcrm.html",
+  "src": "assets/images/prototype-captures/flowcrm-pipeline.webp",
+  "cssW": 1238,
+  "natW": 2880,
+  "need": 1238,
+  "ratio": 2.33
+ },
+ {
+  "setup": "desktop-1x",
+  "page": "case-study-flowcrm.html",
+  "src": "assets/images/prototype-captures/flowcrm-plan.webp",
+  "cssW": 817,
+  "natW": 2880,
+  "need": 817,
+  "ratio": 3.53
+ },
+ {
+  "setup": "desktop-1x",
+  "page": "case-study-flux.html",
+  "src": "assets/images/prototype-captures/flux-payments-control-chain.jpg",
+  "cssW": 1238,
+  "natW": 2880,
+  "need": 1238,
+  "ratio": 2.33
+ },
+ {
+  "setup": "desktop-1x",
+  "page": "case-study-lava.html",
+  "src": "assets/images/lava.jpg",
+  "cssW": 1238,
+  "natW": 2880,
+  "need": 1238,
+  "ratio": 2.33
+ },
+ {
+  "setup": "desktop-1x",
+  "page": "case-study-lava.html",
+  "src": "assets/images/prototype-captures/lava-amenities.webp",
+  "cssW": 817,
+  "natW": 2528,
+  "need": 817,
+  "ratio": 3.09
+ },
+ {
+  "setup": "desktop-1x",
+  "page": "case-study-lava.html",
+  "src": "assets/images/prototype-captures/lava-residences-desktop.webp",
+  "cssW": 817,
+  "natW": 2528,
+  "need": 817,
+  "ratio": 3.09
+ },
+ {
+  "setup": "desktop-1x",
+  "page": "case-study-lumen.html",
+  "src": "assets/images/prototype-captures/lumen-desktop.webp",
+  "cssW": 1238,
+  "natW": 2880,
+  "need": 1238,
+  "ratio": 2.33
+ },
+ {
+  "setup": "desktop-1x",
+  "page": "case-study-luxroom.html",
+  "src": "assets/images/prototype-captures/luxroom-desktop.webp",
+  "cssW": 1238,
+  "natW": 2880,
+  "need": 1238,
+  "ratio": 2.33
+ },
+ {
+  "setup": "desktop-1x",
+  "page": "case-study-luxroom.html",
+  "src": "assets/images/prototype-captures/luxroom-desktop.webp",
+  "cssW": 817,
+  "natW": 2880,
+  "need": 817,
+  "ratio": 3.53
+ },
+ {
+  "setup": "desktop-1x",
+  "page": "case-study-luxroom.html",
+  "src": "assets/images/prototype-captures/luxroom-shop-desktop.webp",
+  "cssW": 602,
+  "natW": 1440,
+  "need": 602,
+  "ratio": 2.39
+ },
+ {
+  "setup": "desktop-1x",
+  "page": "case-study-luxroom.html",
+  "src": "assets/images/prototype-captures/luxroom-shop-mobile.webp",
+  "cssW": 193,
+  "natW": 1170,
+  "need": 193,
+  "ratio": 6.06
+ },
+ {
+  "setup": "desktop-1x",
+  "page": "case-study-nova.html",
+  "src": "assets/images/prototype-captures/nova-desktop.webp?v=20261120-2x",
+  "cssW": 1238,
+  "natW": 2880,
+  "need": 1238,
+  "ratio": 2.33
+ },
+ {
+  "setup": "desktop-1x",
+  "page": "case-study-nova.html",
+  "src": "assets/images/prototype-captures/nova-desktop.webp?v=20261120-2x",
+  "cssW": 602,
+  "natW": 2880,
+  "need": 602,
+  "ratio": 4.78
+ },
+ {
+  "setup": "desktop-1x",
+  "page": "case-study-nova.html",
+  "src": "assets/images/prototype-captures/nova-mobile.webp?v=20261120-2x",
+  "cssW": 193,
+  "natW": 1170,
+  "need": 193,
+  "ratio": 6.06
+ },
+ {
+  "setup": "desktop-1x",
+  "page": "case-study-nova.html",
+  "src": "assets/images/prototype-captures/nova-transfer-review-round01.jpg",
+  "cssW": 328,
+  "natW": 740,
+  "need": 328,
+  "ratio": 2.26
+ },
+ {
+  "setup": "desktop-1x",
+  "page": "case-study-nova.html",
+  "src": "assets/images/prototype-captures/nova-transfer-review-round02.jpg",
+  "cssW": 328,
+  "natW": 740,
+  "need": 328,
+  "ratio": 2.26
+ },
+ {
+  "setup": "desktop-1x",
+  "page": "case-study-sentry.html",
+  "src": "assets/images/prototype-captures/sentry-review-desktop.webp",
+  "cssW": 1238,
+  "natW": 2880,
+  "need": 1238,
+  "ratio": 2.33
+ },
+ {
+  "setup": "desktop-1x",
+  "page": "case-study-sentry.html",
+  "src": "assets/images/prototype-captures/sentry-evidence-workspace.jpg",
+  "cssW": 819,
+  "natW": 1708,
+  "need": 819,
+  "ratio": 2.09
+ },
+ {
+  "setup": "desktop-1x",
+  "page": "case-study-sentry.html",
+  "src": "assets/images/prototype-captures/sentry-rationale-required.jpg",
+  "cssW": 300,
+  "natW": 1120,
+  "need": 300,
+  "ratio": 3.73
+ },
+ {
+  "setup": "desktop-1x",
+  "page": "case-study-sentry.html",
+  "src": "assets/images/prototype-captures/sentry-rule-conflict.jpg",
+  "cssW": 819,
+  "natW": 1680,
+  "need": 819,
+  "ratio": 2.05
+ },
+ {
+  "setup": "desktop-1x",
+  "page": "case-study-sentry.html",
+  "src": "assets/images/prototype-captures/sentry-audit-ledger.jpg",
+  "cssW": 819,
+  "natW": 1936,
+  "need": 819,
+  "ratio": 2.36
+ },
+ {
+  "setup": "desktop-1x",
+  "page": "case-study-uiux-factory.html",
+  "src": "thumbnail/uiux-factory.svg",
+  "cssW": 1238,
+  "natW": 1600,
+  "need": 1238,
+  "ratio": 1.29
+ },
+ {
+  "setup": "desktop-1x",
+  "page": "case-study-violet-marketplace.html",
+  "src": "assets/images/prototype-captures/violet-product.jpg",
+  "cssW": 1238,
+  "natW": 2880,
+  "need": 1238,
+  "ratio": 2.33
+ },
+ {
+  "setup": "desktop-1x",
+  "page": "case-study-violet-marketplace.html",
+  "src": "https://violet-marketplace.vercel.app/assets/media/editorial-04.jpg",
+  "cssW": 800,
+  "natW": 1600,
+  "need": 800,
+  "ratio": 2
+ },
+ {
+  "setup": "desktop-1x",
+  "page": "case-study-voltis.html",
+  "src": "https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto,w_2880/learn_new_model_y_hero.jpg",
+  "cssW": 1238,
+  "natW": 2880,
+  "need": 1238,
+  "ratio": 2.33
+ },
+ {
+  "setup": "desktop-1x",
+  "page": "case-study-voltis.html",
+  "src": "assets/images/prototype-captures/voltis.webp",
+  "cssW": 817,
+  "natW": 2880,
+  "need": 817,
+  "ratio": 3.53
+ },
+ {
+  "setup": "desktop-2x",
+  "page": "index.html",
+  "src": "assets/images/thumbs/luxroom-2160.webp",
+  "cssW": 815,
+  "natW": 2160,
+  "need": 1630,
+  "ratio": 1.33
+ },
+ {
+  "setup": "desktop-2x",
+  "page": "index.html",
+  "src": "assets/images/thumbs/flux-2160.webp",
+  "cssW": 815,
+  "natW": 2160,
+  "need": 1630,
+  "ratio": 1.33
+ },
+ {
+  "setup": "desktop-2x",
+  "page": "index.html",
+  "src": "assets/images/thumbs/atelier-2160.webp",
+  "cssW": 815,
+  "natW": 2160,
+  "need": 1630,
+  "ratio": 1.33
+ },
+ {
+  "setup": "desktop-2x",
+  "page": "index.html",
+  "src": "assets/images/thumbs/sentry-2160.webp",
+  "cssW": 815,
+  "natW": 2160,
+  "need": 1630,
+  "ratio": 1.33
+ },
+ {
+  "setup": "desktop-2x",
+  "page": "index.html",
+  "src": "assets/images/thumbs/nova-960.webp",
+  "cssW": 411,
+  "natW": 960,
+  "need": 821,
+  "ratio": 1.17
+ },
+ {
+  "setup": "desktop-2x",
+  "page": "index.html",
+  "src": "assets/images/thumbs/flowcrm-960.webp",
+  "cssW": 411,
+  "natW": 960,
+  "need": 821,
+  "ratio": 1.17
+ },
+ {
+  "setup": "desktop-2x",
+  "page": "index.html",
+  "src": "assets/images/thumbs/access-960.webp",
+  "cssW": 411,
+  "natW": 960,
+  "need": 821,
+  "ratio": 1.17
+ },
+ {
+  "setup": "desktop-2x",
+  "page": "index.html",
+  "src": "assets/images/thumbs/capital-place-960.webp",
+  "cssW": 411,
+  "natW": 960,
+  "need": 821,
+  "ratio": 1.17
+ },
+ {
+  "setup": "desktop-2x",
+  "page": "index.html",
+  "src": "assets/images/thumbs/lava-960.webp",
+  "cssW": 411,
+  "natW": 960,
+  "need": 821,
+  "ratio": 1.17
+ },
+ {
+  "setup": "desktop-2x",
+  "page": "index.html",
+  "src": "assets/images/thumbs/qtsc-960.webp",
+  "cssW": 411,
+  "natW": 960,
+  "need": 821,
+  "ratio": 1.17
+ },
+ {
+  "setup": "desktop-2x",
+  "page": "index.html",
+  "src": "assets/images/thumbs/violet-marketplace-960.webp",
+  "cssW": 411,
+  "natW": 960,
+  "need": 821,
+  "ratio": 1.17
+ },
+ {
+  "setup": "desktop-2x",
+  "page": "index.html",
+  "src": "assets/images/thumbs/careflow-960.webp",
+  "cssW": 411,
+  "natW": 960,
+  "need": 821,
+  "ratio": 1.17
+ },
+ {
+  "setup": "desktop-2x",
+  "page": "index.html",
+  "src": "assets/images/thumbs/vas-education-960.webp",
+  "cssW": 411,
+  "natW": 960,
+  "need": 821,
+  "ratio": 1.17
+ },
+ {
+  "setup": "desktop-2x",
+  "page": "index.html",
+  "src": "assets/images/thumbs/cennext-960.webp",
+  "cssW": 411,
+  "natW": 960,
+  "need": 821,
+  "ratio": 1.17
+ },
+ {
+  "setup": "desktop-2x",
+  "page": "index.html",
+  "src": "assets/images/thumbs/aegis-960.webp",
+  "cssW": 411,
+  "natW": 960,
+  "need": 821,
+  "ratio": 1.17
+ },
+ {
+  "setup": "desktop-2x",
+  "page": "index.html",
+  "src": "assets/images/thumbs/voltis-960.webp",
+  "cssW": 411,
+  "natW": 960,
+  "need": 821,
+  "ratio": 1.17
+ },
+ {
+  "setup": "desktop-2x",
+  "page": "index.html",
+  "src": "assets/images/thumbs/lumen-960.webp",
+  "cssW": 411,
+  "natW": 960,
+  "need": 821,
+  "ratio": 1.17
+ },
+ {
+  "setup": "desktop-2x",
+  "page": "index.html",
+  "src": "assets/images/avatar.webp",
+  "cssW": 64,
+  "natW": 1000,
+  "need": 128,
+  "ratio": 7.81
+ },
+ {
+  "setup": "desktop-2x",
+  "page": "case-study-access.html",
+  "src": "thumbnail/access.png",
+  "cssW": 1238,
+  "natW": 3488,
+  "need": 2476,
+  "ratio": 1.41
+ },
+ {
+  "setup": "desktop-2x",
+  "page": "case-study-aegis.html",
+  "src": "assets/images/aegis.jpg",
+  "cssW": 1238,
+  "natW": 2880,
+  "need": 2476,
+  "ratio": 1.16
+ },
+ {
+  "setup": "desktop-2x",
+  "page": "case-study-aegis.html",
+  "src": "assets/images/prototype-captures/aegis-tunnel.webp",
+  "cssW": 817,
+  "natW": 2880,
+  "need": 1633,
+  "ratio": 1.76
+ },
+ {
+  "setup": "desktop-2x",
+  "page": "case-study-aegis.html",
+  "src": "assets/images/prototype-captures/aegis-library.webp",
+  "cssW": 817,
+  "natW": 2880,
+  "need": 1633,
+  "ratio": 1.76
+ },
+ {
+  "setup": "desktop-2x",
+  "page": "case-study-atelier.html",
+  "src": "assets/images/prototype-captures/atelier-desktop.webp",
+  "cssW": 1238,
+  "natW": 2880,
+  "need": 2476,
+  "ratio": 1.16
+ },
+ {
+  "setup": "desktop-2x",
+  "page": "case-study-atelier.html",
+  "src": "assets/images/prototype-captures/atelier-desktop.webp",
+  "cssW": 817,
+  "natW": 2880,
+  "need": 1633,
+  "ratio": 1.76
+ },
+ {
+  "setup": "desktop-2x",
+  "page": "case-study-capital-place.html",
+  "src": "assets/images/capital-place.jpg",
+  "cssW": 1238,
+  "natW": 2880,
+  "need": 2476,
+  "ratio": 1.16
+ },
+ {
+  "setup": "desktop-2x",
+  "page": "case-study-capital-place.html",
+  "src": "assets/images/prototype-captures/capital.webp",
+  "cssW": 817,
+  "natW": 2880,
+  "need": 1633,
+  "ratio": 1.76
+ },
+ {
+  "setup": "desktop-2x",
+  "page": "case-study-careflow.html",
+  "src": "assets/images/prototype-captures/careflow-desktop.webp",
+  "cssW": 1238,
+  "natW": 2880,
+  "need": 2476,
+  "ratio": 1.16
+ },
+ {
+  "setup": "desktop-2x",
+  "page": "case-study-careflow.html",
+  "src": "assets/images/prototype-captures/careflow-patient.webp",
+  "cssW": 817,
+  "natW": 1950,
+  "need": 1633,
+  "ratio": 1.19
+ },
+ {
+  "setup": "desktop-2x",
+  "page": "case-study-cennext.html",
+  "src": "https://images.unsplash.com/photo-1645258044234-f4ba2655baf1?auto=format&fit=crop&fm=jpg&q=80&w=2880",
+  "cssW": 1238,
+  "natW": 2880,
+  "need": 2476,
+  "ratio": 1.16
+ },
+ {
+  "setup": "desktop-2x",
+  "page": "case-study-cennext.html",
+  "src": "https://images.pexels.com/photos/32208781/pexels-photo-32208781/free-photo-of-technician-repairing-industrial-machine-equipment.jpeg?auto=compress&w=2400",
+  "cssW": 817,
+  "natW": 2268,
+  "need": 1633,
+  "ratio": 1.39
+ },
+ {
+  "setup": "desktop-2x",
+  "page": "case-study-docflow-ai.html",
+  "src": "assets/images/prototype-captures/docflow-ai-desktop.webp",
+  "cssW": 1238,
+  "natW": 2880,
+  "need": 2476,
+  "ratio": 1.16
+ },
+ {
+  "setup": "desktop-2x",
+  "page": "case-study-flowcrm.html",
+  "src": "assets/images/prototype-captures/flowcrm-pipeline.webp",
+  "cssW": 1238,
+  "natW": 2880,
+  "need": 2476,
+  "ratio": 1.16
+ },
+ {
+  "setup": "desktop-2x",
+  "page": "case-study-flowcrm.html",
+  "src": "assets/images/prototype-captures/flowcrm-plan.webp",
+  "cssW": 817,
+  "natW": 2880,
+  "need": 1633,
+  "ratio": 1.76
+ },
+ {
+  "setup": "desktop-2x",
+  "page": "case-study-flux.html",
+  "src": "assets/images/prototype-captures/flux-payments-control-chain.jpg",
+  "cssW": 1238,
+  "natW": 2880,
+  "need": 2476,
+  "ratio": 1.16
+ },
+ {
+  "setup": "desktop-2x",
+  "page": "case-study-lava.html",
+  "src": "assets/images/lava.jpg",
+  "cssW": 1238,
+  "natW": 2880,
+  "need": 2476,
+  "ratio": 1.16
+ },
+ {
+  "setup": "desktop-2x",
+  "page": "case-study-lava.html",
+  "src": "assets/images/prototype-captures/lava-amenities.webp",
+  "cssW": 817,
+  "natW": 2528,
+  "need": 1633,
+  "ratio": 1.55
+ },
+ {
+  "setup": "desktop-2x",
+  "page": "case-study-lava.html",
+  "src": "assets/images/prototype-captures/lava-residences-desktop.webp",
+  "cssW": 817,
+  "natW": 2528,
+  "need": 1633,
+  "ratio": 1.55
+ },
+ {
+  "setup": "desktop-2x",
+  "page": "case-study-lumen.html",
+  "src": "assets/images/prototype-captures/lumen-desktop.webp",
+  "cssW": 1238,
+  "natW": 2880,
+  "need": 2476,
+  "ratio": 1.16
+ },
+ {
+  "setup": "desktop-2x",
+  "page": "case-study-luxroom.html",
+  "src": "assets/images/prototype-captures/luxroom-desktop.webp",
+  "cssW": 1238,
+  "natW": 2880,
+  "need": 2476,
+  "ratio": 1.16
+ },
+ {
+  "setup": "desktop-2x",
+  "page": "case-study-luxroom.html",
+  "src": "assets/images/prototype-captures/luxroom-desktop.webp",
+  "cssW": 817,
+  "natW": 2880,
+  "need": 1633,
+  "ratio": 1.76
+ },
+ {
+  "setup": "desktop-2x",
+  "page": "case-study-luxroom.html",
+  "src": "assets/images/prototype-captures/luxroom-shop-desktop.webp",
+  "cssW": 602,
+  "natW": 1440,
+  "need": 1204,
+  "ratio": 1.2
+ },
+ {
+  "setup": "desktop-2x",
+  "page": "case-study-luxroom.html",
+  "src": "assets/images/prototype-captures/luxroom-shop-mobile.webp",
+  "cssW": 193,
+  "natW": 1170,
+  "need": 385,
+  "ratio": 3.04
+ },
+ {
+  "setup": "desktop-2x",
+  "page": "case-study-nova.html",
+  "src": "assets/images/prototype-captures/nova-desktop.webp?v=20261120-2x",
+  "cssW": 1238,
+  "natW": 2880,
+  "need": 2476,
+  "ratio": 1.16
+ },
+ {
+  "setup": "desktop-2x",
+  "page": "case-study-nova.html",
+  "src": "assets/images/prototype-captures/nova-desktop.webp?v=20261120-2x",
+  "cssW": 602,
+  "natW": 2880,
+  "need": 1204,
+  "ratio": 2.39
+ },
+ {
+  "setup": "desktop-2x",
+  "page": "case-study-nova.html",
+  "src": "assets/images/prototype-captures/nova-mobile.webp?v=20261120-2x",
+  "cssW": 193,
+  "natW": 1170,
+  "need": 385,
+  "ratio": 3.04
+ },
+ {
+  "setup": "desktop-2x",
+  "page": "case-study-nova.html",
+  "src": "assets/images/prototype-captures/nova-transfer-review-round01.jpg",
+  "cssW": 328,
+  "natW": 740,
+  "need": 656,
+  "ratio": 1.13
+ },
+ {
+  "setup": "desktop-2x",
+  "page": "case-study-nova.html",
+  "src": "assets/images/prototype-captures/nova-transfer-review-round02.jpg",
+  "cssW": 328,
+  "natW": 740,
+  "need": 656,
+  "ratio": 1.13
+ },
+ {
+  "setup": "desktop-2x",
+  "page": "case-study-sentry.html",
+  "src": "assets/images/prototype-captures/sentry-review-desktop.webp",
+  "cssW": 1238,
+  "natW": 2880,
+  "need": 2476,
+  "ratio": 1.16
+ },
+ {
+  "setup": "desktop-2x",
+  "page": "case-study-sentry.html",
+  "src": "assets/images/prototype-captures/sentry-evidence-workspace.jpg",
+  "cssW": 819,
+  "natW": 1708,
+  "need": 1637,
+  "ratio": 1.04
+ },
+ {
+  "setup": "desktop-2x",
+  "page": "case-study-sentry.html",
+  "src": "assets/images/prototype-captures/sentry-rationale-required.jpg",
+  "cssW": 300,
+  "natW": 1120,
+  "need": 600,
+  "ratio": 1.87
+ },
+ {
+  "setup": "desktop-2x",
+  "page": "case-study-sentry.html",
+  "src": "assets/images/prototype-captures/sentry-rule-conflict.jpg",
+  "cssW": 819,
+  "natW": 1680,
+  "need": 1637,
+  "ratio": 1.03
+ },
+ {
+  "setup": "desktop-2x",
+  "page": "case-study-sentry.html",
+  "src": "assets/images/prototype-captures/sentry-audit-ledger.jpg",
+  "cssW": 819,
+  "natW": 1936,
+  "need": 1637,
+  "ratio": 1.18
+ },
+ {
+  "setup": "desktop-2x",
+  "page": "case-study-uiux-factory.html",
+  "src": "thumbnail/uiux-factory.svg",
+  "cssW": 1238,
+  "natW": 1600,
+  "need": 2476,
+  "ratio": 0.65
+ },
+ {
+  "setup": "desktop-2x",
+  "page": "case-study-violet-marketplace.html",
+  "src": "assets/images/prototype-captures/violet-product.jpg",
+  "cssW": 1238,
+  "natW": 2880,
+  "need": 2476,
+  "ratio": 1.16
+ },
+ {
+  "setup": "desktop-2x",
+  "page": "case-study-violet-marketplace.html",
+  "src": "https://violet-marketplace.vercel.app/assets/media/editorial-04.jpg",
+  "cssW": 800,
+  "natW": 1600,
+  "need": 1600,
+  "ratio": 1
+ },
+ {
+  "setup": "desktop-2x",
+  "page": "case-study-voltis.html",
+  "src": "https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto,w_2880/learn_new_model_y_hero.jpg",
+  "cssW": 1238,
+  "natW": 2880,
+  "need": 2476,
+  "ratio": 1.16
+ },
+ {
+  "setup": "desktop-2x",
+  "page": "case-study-voltis.html",
+  "src": "assets/images/prototype-captures/voltis.webp",
+  "cssW": 817,
+  "natW": 2880,
+  "need": 1633,
+  "ratio": 1.76
+ },
+ {
+  "setup": "mobile-3x",
+  "page": "index.html",
+  "src": "assets/images/thumbs/luxroom-1440.webp",
+  "cssW": 350,
+  "natW": 1440,
+  "need": 1050,
+  "ratio": 1.37
+ },
+ {
+  "setup": "mobile-3x",
+  "page": "index.html",
+  "src": "assets/images/thumbs/flux-1440.webp",
+  "cssW": 350,
+  "natW": 1440,
+  "need": 1050,
+  "ratio": 1.37
+ },
+ {
+  "setup": "mobile-3x",
+  "page": "index.html",
+  "src": "assets/images/thumbs/atelier-1440.webp",
+  "cssW": 350,
+  "natW": 1440,
+  "need": 1050,
+  "ratio": 1.37
+ },
+ {
+  "setup": "mobile-3x",
+  "page": "index.html",
+  "src": "assets/images/thumbs/sentry-1440.webp",
+  "cssW": 350,
+  "natW": 1440,
+  "need": 1050,
+  "ratio": 1.37
+ },
+ {
+  "setup": "mobile-3x",
+  "page": "index.html",
+  "src": "assets/images/thumbs/nova-1440.webp",
+  "cssW": 350,
+  "natW": 1440,
+  "need": 1050,
+  "ratio": 1.37
+ },
+ {
+  "setup": "mobile-3x",
+  "page": "index.html",
+  "src": "assets/images/thumbs/flowcrm-1440.webp",
+  "cssW": 350,
+  "natW": 1440,
+  "need": 1050,
+  "ratio": 1.37
+ },
+ {
+  "setup": "mobile-3x",
+  "page": "index.html",
+  "src": "assets/images/thumbs/access-1440.webp",
+  "cssW": 350,
+  "natW": 1440,
+  "need": 1050,
+  "ratio": 1.37
+ },
+ {
+  "setup": "mobile-3x",
+  "page": "index.html",
+  "src": "assets/images/thumbs/capital-place-1440.webp",
+  "cssW": 350,
+  "natW": 1440,
+  "need": 1050,
+  "ratio": 1.37
+ },
+ {
+  "setup": "mobile-3x",
+  "page": "index.html",
+  "src": "assets/images/thumbs/lava-1440.webp",
+  "cssW": 350,
+  "natW": 1440,
+  "need": 1050,
+  "ratio": 1.37
+ },
+ {
+  "setup": "mobile-3x",
+  "page": "index.html",
+  "src": "assets/images/thumbs/qtsc-1440.webp",
+  "cssW": 350,
+  "natW": 1440,
+  "need": 1050,
+  "ratio": 1.37
+ },
+ {
+  "setup": "mobile-3x",
+  "page": "index.html",
+  "src": "assets/images/thumbs/violet-marketplace-1440.webp",
+  "cssW": 350,
+  "natW": 1440,
+  "need": 1050,
+  "ratio": 1.37
+ },
+ {
+  "setup": "mobile-3x",
+  "page": "index.html",
+  "src": "assets/images/thumbs/careflow-1440.webp",
+  "cssW": 350,
+  "natW": 1440,
+  "need": 1050,
+  "ratio": 1.37
+ },
+ {
+  "setup": "mobile-3x",
+  "page": "index.html",
+  "src": "assets/images/thumbs/vas-education-1440.webp",
+  "cssW": 350,
+  "natW": 1440,
+  "need": 1050,
+  "ratio": 1.37
+ },
+ {
+  "setup": "mobile-3x",
+  "page": "index.html",
+  "src": "assets/images/thumbs/cennext-1440.webp",
+  "cssW": 350,
+  "natW": 1440,
+  "need": 1050,
+  "ratio": 1.37
+ },
+ {
+  "setup": "mobile-3x",
+  "page": "index.html",
+  "src": "assets/images/thumbs/aegis-1440.webp",
+  "cssW": 350,
+  "natW": 1440,
+  "need": 1050,
+  "ratio": 1.37
+ },
+ {
+  "setup": "mobile-3x",
+  "page": "index.html",
+  "src": "assets/images/thumbs/voltis-1440.webp",
+  "cssW": 350,
+  "natW": 1440,
+  "need": 1050,
+  "ratio": 1.37
+ },
+ {
+  "setup": "mobile-3x",
+  "page": "index.html",
+  "src": "assets/images/thumbs/lumen-1440.webp",
+  "cssW": 350,
+  "natW": 1440,
+  "need": 1050,
+  "ratio": 1.37
+ },
+ {
+  "setup": "mobile-3x",
+  "page": "index.html",
+  "src": "assets/images/avatar.webp",
+  "cssW": 50,
+  "natW": 1000,
+  "need": 151,
+  "ratio": 6.62
+ },
+ {
+  "setup": "mobile-3x",
+  "page": "case-study-access.html",
+  "src": "thumbnail/access.png",
+  "cssW": 352,
+  "natW": 3488,
+  "need": 1056,
+  "ratio": 3.3
+ },
+ {
+  "setup": "mobile-3x",
+  "page": "case-study-aegis.html",
+  "src": "assets/images/aegis.jpg",
+  "cssW": 352,
+  "natW": 2880,
+  "need": 1056,
+  "ratio": 2.73
+ },
+ {
+  "setup": "mobile-3x",
+  "page": "case-study-aegis.html",
+  "src": "assets/images/prototype-captures/aegis-tunnel.webp",
+  "cssW": 352,
+  "natW": 2880,
+  "need": 1056,
+  "ratio": 2.73
+ },
+ {
+  "setup": "mobile-3x",
+  "page": "case-study-aegis.html",
+  "src": "assets/images/prototype-captures/aegis-library.webp",
+  "cssW": 352,
+  "natW": 2880,
+  "need": 1056,
+  "ratio": 2.73
+ },
+ {
+  "setup": "mobile-3x",
+  "page": "case-study-atelier.html",
+  "src": "assets/images/prototype-captures/atelier-desktop.webp",
+  "cssW": 352,
+  "natW": 2880,
+  "need": 1056,
+  "ratio": 2.73
+ },
+ {
+  "setup": "mobile-3x",
+  "page": "case-study-atelier.html",
+  "src": "assets/images/prototype-captures/atelier-desktop.webp",
+  "cssW": 352,
+  "natW": 2880,
+  "need": 1056,
+  "ratio": 2.73
+ },
+ {
+  "setup": "mobile-3x",
+  "page": "case-study-capital-place.html",
+  "src": "assets/images/capital-place.jpg",
+  "cssW": 352,
+  "natW": 2880,
+  "need": 1056,
+  "ratio": 2.73
+ },
+ {
+  "setup": "mobile-3x",
+  "page": "case-study-capital-place.html",
+  "src": "assets/images/prototype-captures/capital.webp",
+  "cssW": 352,
+  "natW": 2880,
+  "need": 1056,
+  "ratio": 2.73
+ },
+ {
+  "setup": "mobile-3x",
+  "page": "case-study-careflow.html",
+  "src": "assets/images/prototype-captures/careflow-desktop.webp",
+  "cssW": 352,
+  "natW": 2880,
+  "need": 1056,
+  "ratio": 2.73
+ },
+ {
+  "setup": "mobile-3x",
+  "page": "case-study-careflow.html",
+  "src": "assets/images/prototype-captures/careflow-patient.webp",
+  "cssW": 352,
+  "natW": 1950,
+  "need": 1056,
+  "ratio": 1.85
+ },
+ {
+  "setup": "mobile-3x",
+  "page": "case-study-cennext.html",
+  "src": "https://images.unsplash.com/photo-1645258044234-f4ba2655baf1?auto=format&fit=crop&fm=jpg&q=80&w=2880",
+  "cssW": 352,
+  "natW": 2880,
+  "need": 1056,
+  "ratio": 2.73
+ },
+ {
+  "setup": "mobile-3x",
+  "page": "case-study-cennext.html",
+  "src": "https://images.pexels.com/photos/32208781/pexels-photo-32208781/free-photo-of-technician-repairing-industrial-machine-equipment.jpeg?auto=compress&w=2400",
+  "cssW": 352,
+  "natW": 2268,
+  "need": 1056,
+  "ratio": 2.15
+ },
+ {
+  "setup": "mobile-3x",
+  "page": "case-study-docflow-ai.html",
+  "src": "assets/images/prototype-captures/docflow-ai-desktop.webp",
+  "cssW": 352,
+  "natW": 2880,
+  "need": 1056,
+  "ratio": 2.73
+ },
+ {
+  "setup": "mobile-3x",
+  "page": "case-study-flowcrm.html",
+  "src": "assets/images/prototype-captures/flowcrm-pipeline.webp",
+  "cssW": 352,
+  "natW": 2880,
+  "need": 1056,
+  "ratio": 2.73
+ },
+ {
+  "setup": "mobile-3x",
+  "page": "case-study-flowcrm.html",
+  "src": "assets/images/prototype-captures/flowcrm-plan.webp",
+  "cssW": 352,
+  "natW": 2880,
+  "need": 1056,
+  "ratio": 2.73
+ },
+ {
+  "setup": "mobile-3x",
+  "page": "case-study-flux.html",
+  "src": "assets/images/prototype-captures/flux-payments-control-chain.jpg",
+  "cssW": 352,
+  "natW": 2880,
+  "need": 1056,
+  "ratio": 2.73
+ },
+ {
+  "setup": "mobile-3x",
+  "page": "case-study-lava.html",
+  "src": "assets/images/lava.jpg",
+  "cssW": 352,
+  "natW": 2880,
+  "need": 1056,
+  "ratio": 2.73
+ },
+ {
+  "setup": "mobile-3x",
+  "page": "case-study-lava.html",
+  "src": "assets/images/prototype-captures/lava-amenities.webp",
+  "cssW": 352,
+  "natW": 2528,
+  "need": 1056,
+  "ratio": 2.39
+ },
+ {
+  "setup": "mobile-3x",
+  "page": "case-study-lava.html",
+  "src": "assets/images/prototype-captures/lava-residences-desktop.webp",
+  "cssW": 352,
+  "natW": 2528,
+  "need": 1056,
+  "ratio": 2.39
+ },
+ {
+  "setup": "mobile-3x",
+  "page": "case-study-lumen.html",
+  "src": "assets/images/prototype-captures/lumen-desktop.webp",
+  "cssW": 352,
+  "natW": 2880,
+  "need": 1056,
+  "ratio": 2.73
+ },
+ {
+  "setup": "mobile-3x",
+  "page": "case-study-luxroom.html",
+  "src": "assets/images/prototype-captures/luxroom-desktop.webp",
+  "cssW": 352,
+  "natW": 2880,
+  "need": 1056,
+  "ratio": 2.73
+ },
+ {
+  "setup": "mobile-3x",
+  "page": "case-study-luxroom.html",
+  "src": "assets/images/prototype-captures/luxroom-desktop.webp",
+  "cssW": 352,
+  "natW": 2880,
+  "need": 1056,
+  "ratio": 2.73
+ },
+ {
+  "setup": "mobile-3x",
+  "page": "case-study-luxroom.html",
+  "src": "assets/images/prototype-captures/luxroom-shop-desktop.webp",
+  "cssW": 354,
+  "natW": 1440,
+  "need": 1062,
+  "ratio": 1.36
+ },
+ {
+  "setup": "mobile-3x",
+  "page": "case-study-luxroom.html",
+  "src": "assets/images/prototype-captures/luxroom-shop-mobile.webp",
+  "cssW": 280,
+  "natW": 1170,
+  "need": 840,
+  "ratio": 1.39
+ },
+ {
+  "setup": "mobile-3x",
+  "page": "case-study-nova.html",
+  "src": "assets/images/prototype-captures/nova-desktop.webp?v=20261120-2x",
+  "cssW": 352,
+  "natW": 2880,
+  "need": 1056,
+  "ratio": 2.73
+ },
+ {
+  "setup": "mobile-3x",
+  "page": "case-study-nova.html",
+  "src": "assets/images/prototype-captures/nova-desktop.webp?v=20261120-2x",
+  "cssW": 354,
+  "natW": 2880,
+  "need": 1062,
+  "ratio": 2.71
+ },
+ {
+  "setup": "mobile-3x",
+  "page": "case-study-nova.html",
+  "src": "assets/images/prototype-captures/nova-mobile.webp?v=20261120-2x",
+  "cssW": 280,
+  "natW": 1170,
+  "need": 840,
+  "ratio": 1.39
+ },
+ {
+  "setup": "mobile-3x",
+  "page": "case-study-nova.html",
+  "src": "assets/images/prototype-captures/nova-transfer-review-round01.jpg",
+  "cssW": 340,
+  "natW": 740,
+  "need": 1020,
+  "ratio": 0.73
+ },
+ {
+  "setup": "mobile-3x",
+  "page": "case-study-nova.html",
+  "src": "assets/images/prototype-captures/nova-transfer-review-round02.jpg",
+  "cssW": 340,
+  "natW": 740,
+  "need": 1020,
+  "ratio": 0.73
+ },
+ {
+  "setup": "mobile-3x",
+  "page": "case-study-sentry.html",
+  "src": "assets/images/prototype-captures/sentry-review-desktop.webp",
+  "cssW": 352,
+  "natW": 2880,
+  "need": 1056,
+  "ratio": 2.73
+ },
+ {
+  "setup": "mobile-3x",
+  "page": "case-study-sentry.html",
+  "src": "assets/images/prototype-captures/sentry-evidence-workspace.jpg",
+  "cssW": 354,
+  "natW": 1708,
+  "need": 1062,
+  "ratio": 1.61
+ },
+ {
+  "setup": "mobile-3x",
+  "page": "case-study-sentry.html",
+  "src": "assets/images/prototype-captures/sentry-rationale-required.jpg",
+  "cssW": 300,
+  "natW": 1120,
+  "need": 900,
+  "ratio": 1.24
+ },
+ {
+  "setup": "mobile-3x",
+  "page": "case-study-sentry.html",
+  "src": "assets/images/prototype-captures/sentry-rule-conflict.jpg",
+  "cssW": 354,
+  "natW": 1680,
+  "need": 1062,
+  "ratio": 1.58
+ },
+ {
+  "setup": "mobile-3x",
+  "page": "case-study-sentry.html",
+  "src": "assets/images/prototype-captures/sentry-audit-ledger.jpg",
+  "cssW": 354,
+  "natW": 1936,
+  "need": 1062,
+  "ratio": 1.82
+ },
+ {
+  "setup": "mobile-3x",
+  "page": "case-study-uiux-factory.html",
+  "src": "thumbnail/uiux-factory.svg",
+  "cssW": 352,
+  "natW": 1600,
+  "need": 1056,
+  "ratio": 1.52
+ },
+ {
+  "setup": "mobile-3x",
+  "page": "case-study-violet-marketplace.html",
+  "src": "assets/images/prototype-captures/violet-product.jpg",
+  "cssW": 352,
+  "natW": 2880,
+  "need": 1056,
+  "ratio": 2.73
+ },
+ {
+  "setup": "mobile-3x",
+  "page": "case-study-voltis.html",
+  "src": "https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto,w_2880/learn_new_model_y_hero.jpg",
+  "cssW": 352,
+  "natW": 2880,
+  "need": 1056,
+  "ratio": 2.73
+ },
+ {
+  "setup": "mobile-3x",
+  "page": "case-study-voltis.html",
+  "src": "assets/images/prototype-captures/voltis.webp",
+  "cssW": 352,
+  "natW": 2880,
+  "need": 1056,
+  "ratio": 2.73
+ }
+]

@@ -92,8 +92,8 @@ test('recruiter essentials are concise, source-authored and ordered around work'
   expect(await page.locator('#navLinks a').allTextContents()).toEqual(['Experience', 'Work', 'Contact']);
   expect(await page.locator('#hero').innerText().then(t=>t.split(/\s+/).length)).toBeLessThan(60);
   await expect(page.locator('#ai-workflow')).toContainText('I own the design decisions');
-  await expect(page.locator('#experience article')).toHaveCount(3);
-  await expect(page.locator('.resume-link')).toHaveAttribute('href','Do_Anh_Nghia_UIUXDesigner_CV.pdf');
+  await expect(page.locator('#experience .experience-list').first().locator('article')).toHaveCount(3);
+  await expect(page.locator('.resume-link')).toHaveAttribute('href','Do_Anh_Nghia_Product_Designer_CV.pdf');
 });
 
 test('navigation, core copy and all projects remain usable without JavaScript', async ({browser}) => {
@@ -159,12 +159,13 @@ test('system theme and manual preference survive reloads', async ({browser}) => 
   const context=await browser.newContext({colorScheme:'dark'});
   const page=await context.newPage();
   await page.goto(baseURL);
-  await expect(page.locator('#themeToggle')).toHaveText('Light');
+  // The theme control became a switch (2026-11-20): state is read from aria-checked, not from its text.
+  await expect(page.locator('#themeToggle')).toHaveAttribute('aria-checked','true');
   await page.locator('#themeToggle').click();
   await expect(page.locator('html')).toHaveAttribute('data-theme','light');
   await page.reload();
   await expect(page.locator('html')).toHaveAttribute('data-theme','light');
-  await expect(page.locator('#themeToggle')).toHaveText('Dark');
+  await expect(page.locator('#themeToggle')).toHaveAttribute('aria-checked','false');
   await context.close();
 });
 
@@ -328,17 +329,14 @@ test('200 percent text and keyboard focus retain the primary journey',async ({pa
   });
 
 
-test('A32 case studies expose a 30-second proof strip with honest evidence boundaries', async ({ page }) => {
+// The injected 'Project summary' strip was removed on 2026-11-20 at the owner's request; evidence stays in each case's own section.
+test('case studies lead to their own evidence section without an injected summary strip', async ({ page }) => {
   for (const route of ['case-study-luxroom.html', 'case-study-flux.html', 'case-study-atelier.html']) {
     await page.goto(`${baseURL}/${route}`);
-    await expect(page.locator('#project-30-sec-proof')).toHaveCount(1);
-    await expect(page.locator('#project-30-sec-proof .project-recruiter-proof-grid > article')).toHaveCount(6);
-    await expect(page.locator('#project-30-sec-proof')).toContainText('Still open');
+    await expect(page.locator('#project-30-sec-proof')).toHaveCount(0);
+    await expect(page.locator('.case-nav-actions a[href="#case-evidence"]')).toHaveCount(1);
+    await expect(page.locator('#case-evidence')).toHaveCount(1);
   }
-  await page.goto(`${baseURL}/case-study-luxroom.html`);
-  await expect(page.locator('#project-30-sec-proof')).toContainText('direct-user baseline not measured');
-  await page.goto(`${baseURL}/case-study-atelier.html`);
-  await expect(page.locator('#project-30-sec-proof')).toContainText('direct-user baseline not measured');
 });
 
 test('each listed project case appears in exactly one classified catalog entry', async ({page})=>{

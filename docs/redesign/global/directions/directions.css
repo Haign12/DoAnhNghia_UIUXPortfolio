@@ -1,0 +1,35 @@
+/* Shared base for the three home-page direction studies. Tokens come from brand.css. */
+:root {
+  --ink: var(--ds-text-primary, #111);
+  --paper: var(--ds-surface-page, #fff);
+  --line: #d6d6d6;
+  --muted: #555;
+  --gutter: 40px;
+  --shell: 1280px;
+  --sans: "Source Sans 3", system-ui, sans-serif;
+  --serif: "Source Serif 4", Georgia, serif;
+}
+* { box-sizing: border-box; margin: 0; }
+body { background: var(--paper); color: var(--ink); font-family: var(--sans); font-size: 17px; line-height: 1.55; }
+img { display: block; width: 100%; height: auto; }
+a { color: inherit; }
+.shell { width: min(var(--shell), calc(100% - var(--gutter) * 2)); margin-inline: auto; }
+.nav { border-bottom: 1px solid var(--line); }
+.nav .shell { display: flex; align-items: center; justify-content: space-between; height: 72px; }
+.nav-links { display: flex; gap: 28px; font-size: 15px; }
+.nav-links a { text-decoration: none; }
+.mark { width: 56px; height: 36px; background: currentColor;
+  -webkit-mask: url("../../../../assets/images/brand/xii-an-mask.png") center / contain no-repeat;
+  mask: url("../../../../assets/images/brand/xii-an-mask.png") center / contain no-repeat; }
+.btn { display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: 0 20px;
+  border-radius: 6px; font-size: 15px; font-weight: 600; text-decoration: none; border: 1px solid var(--ink); }
+.btn.primary { background: var(--ink); color: var(--paper); }
+.label { font-size: 13px; letter-spacing: .02em; color: var(--muted); }
+.thumb { border-radius: 8px; overflow: hidden; background: #eee; aspect-ratio: 1.6; }
+.thumb img { height: 100%; object-fit: cover; }
+.fact dt { font-size: 13px; color: var(--muted); }
+.fact dd { font-size: 16px; }
+@media (max-width: 839px) {
+  :root { --gutter: 20px; }
+  .nav-links { display: none; }
+}

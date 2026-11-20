@@ -38,11 +38,8 @@
   }
   function updateThemeLabel() {
     const dark = isDark();
-    themeButton.textContent = dark ? "Light" : "Dark";
-    themeButton.setAttribute(
-      "aria-label",
-      dark ? "Switch to light theme" : "Switch to dark theme",
-    );
+    // The theme control is a switch: its name stays "Dark theme", the state lives in aria-checked.
+    themeButton.setAttribute("aria-checked", String(dark));
     document.querySelector('meta[name="theme-color"]').content =
       getComputedStyle(root).getPropertyValue("--ds-surface-page").trim();
     document.querySelector('link[rel="icon"]').href =
@@ -62,7 +59,8 @@
   updateThemeLabel();
 
   const filterRow = document.querySelector(".filter-row");
-  const catalog = document.getElementById("work");
+  const catalog = document.getElementById("more-work");
+  const selectedWork = document.getElementById("work");
   const grid = document.getElementById("projectResults");
   const cards = [...grid.querySelectorAll(".index-card")];
   // Each card belongs to exactly one industry; filters are built from the cards in page order.
@@ -74,14 +72,6 @@
       industries.push(industry);
     }
     industry.cards.push(card);
-  });
-  const projectsPerRow = 3;
-  const slots = Array.from({ length: (projectsPerRow - cards.length % projectsPerRow) % projectsPerRow }, () => {
-    const slot = document.createElement("p");
-    slot.className = "project-slot";
-    slot.textContent = "Coming soon";
-    grid.append(slot);
-    return slot;
   });
   const filters = [{ id: "all", label: "All Projects", size: cards.length }, ...industries.map(
     ({ id, label, cards: members }) => ({ id, label, size: members.length }),
@@ -136,7 +126,6 @@
       if (!card.hidden) shown.add(card.dataset.category);
     });
     const count = cards.filter((card) => !card.hidden).length;
-    slots.forEach((slot) => { slot.hidden = Boolean(query) || category !== "all"; });
     empty.hidden = count > 0;
     filterStatus.textContent = `${count} ${count === 1 ? "project" : "projects"} in ${shown.size} ${shown.size === 1 ? "industry" : "industries"}`;
   }
@@ -172,6 +161,12 @@
     if (!hash) return;
     const requested = hash.startsWith("industry-") ? hash.slice(9) : legacyGroups[hash];
     if (requested !== undefined || hash.startsWith("group-")) {
+      // Industries whose projects all moved to Selected work have no filter; show them there.
+      if (!industries.some(({ id }) => id === requested) &&
+          selectedWork.querySelector(`.index-card[data-category="${CSS.escape(requested || "")}"]`)) {
+        selectedWork.scrollIntoView({ block: "start", behavior: "instant" });
+        return;
+      }
       category = industries.some(({ id }) => id === requested) ? requested : "all";
       search.value = "";
       filterProjects();
@@ -191,4 +186,85 @@
   catalog.querySelector(".project-tools").hidden = false;
   window.addEventListener("hashchange", revealAnchor);
   revealAnchor();
+  // Coming back from a case study (#project-<slug>): the first jump happens before fonts and images settle,
+  // so align the project row again once the page has finished loading.
+  // Late font and image swaps can still move it, so keep it aligned while the layout settles (up to 1.5 s),
+  // and stop as soon as the visitor scrolls, touches or presses a key.
+  window.addEventListener("load", () => {
+    const id = decodeURIComponent(window.location.hash.slice(1));
+    const card = id.startsWith("project-") && document.getElementById(id);
+    if (!card) return;
+    let settled = false;
+    const align = () => { if (!settled) card.scrollIntoView({ block: "start", behavior: "instant" }); };
+    const stop = () => { settled = true; resizeWatch.disconnect(); };
+    const resizeWatch = new ResizeObserver(align);
+    ["wheel", "touchstart", "keydown"].forEach((type) =>
+      window.addEventListener(type, stop, { once: true, passive: true }));
+    align();
+    resizeWatch.observe(document.querySelector("main"));
+    document.fonts?.ready.then(align);
+    setTimeout(stop, 1500);
+  });
+
+  // Reading progress, floating back-to-top and the current-section marker in the nav share one scroll pass.
+  const progressBar = document.getElementById("scrollProgress");
+  const toTop = document.getElementById("toTop");
+  const sectionLinks = [...navigation.querySelectorAll('a[href^="#"]')]
+    .map((link) => ({ link, targets: [document.querySelector(link.getAttribute("href"))] }))
+    .filter((item) => item.targets[0]);
+  // "Work" covers Selected work and More projects.
+  const workItem = sectionLinks.find((item) => item.link.getAttribute("href") === "#work");
+  if (workItem && catalog) workItem.targets.push(catalog);
+  let scrollQueued = false;
+  function updateScrollState() {
+    scrollQueued = false;
+    const y = window.scrollY;
+    const max = document.documentElement.scrollHeight - window.innerHeight;
+    if (progressBar) progressBar.style.transform = `scaleX(${max > 0 ? Math.min(y / max, 1) : 0})`;
+    if (toTop) toTop.classList.toggle("is-visible", y > window.innerHeight * 0.8);
+    // The current section is the one whose top passed 35% of the viewport most recently (closest above the line),
+    // so it follows the visual order, which differs from the nav order on small screens.
+    const line = window.innerHeight * 0.35;
+    let current = null;
+    let currentTop = -Infinity;
+    sectionLinks.forEach((item) => {
+      item.targets.forEach((t) => {
+        const top = t.getBoundingClientRect().top;
+        if (top <= line && top > currentTop) { current = item; currentTop = top; }
+      });
+    });
+    if (max > 0 && y >= max - 2) current = sectionLinks[sectionLinks.length - 1];
+    sectionLinks.forEach((item) => {
+      if (item === current) item.link.setAttribute("aria-current", "location");
+      else item.link.removeAttribute("aria-current");
+    });
+  }
+  window.addEventListener("scroll", () => {
+    if (!scrollQueued) { scrollQueued = true; requestAnimationFrame(updateScrollState); }
+  }, { passive: true });
+  window.addEventListener("resize", updateScrollState);
+  updateScrollState();
+
+  // One-tap email copy; the mailto link stays as the fallback when the clipboard is unavailable.
+  const copyButton = document.getElementById("copyEmail");
+  const copyStatus = document.getElementById("copyStatus");
+  if (copyButton && navigator.clipboard && window.isSecureContext) {
+    copyButton.hidden = false;
+    let resetTimer;
+    copyButton.addEventListener("click", async () => {
+      try {
+        await navigator.clipboard.writeText(copyButton.dataset.copy);
+        copyButton.textContent = "Copied";
+        copyStatus.textContent = "Email address copied";
+      } catch {
+        copyButton.textContent = "Copy failed";
+        copyStatus.textContent = "Could not copy. Use the email link instead.";
+      }
+      clearTimeout(resetTimer);
+      resetTimer = setTimeout(() => {
+        copyButton.textContent = "Copy email";
+        copyStatus.textContent = "";
+      }, 1500);
+    });
+  }
 })();
