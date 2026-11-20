@@ -63,28 +63,28 @@
 
   const filterRow = document.querySelector(".filter-row");
   const catalog = document.getElementById("work");
-  const groups = [...catalog.querySelectorAll(".project-group")].map((element) => ({
-    element,
-    id: element.dataset.group,
-    label: element.dataset.filterLabel,
-    cards: [...element.querySelectorAll(".index-card")],
-    count: element.querySelector(".group-count"),
-  })).filter((group) => group.cards.length);
-  const projectsPerRow = 3;
-  groups.forEach((group) => {
-    const grid = group.element.querySelector(".index-grid");
-    const openSlots = (projectsPerRow - group.cards.length % projectsPerRow) % projectsPerRow;
-    group.slots = Array.from({ length: openSlots }, () => {
-      const slot = document.createElement("p");
-      slot.className = "project-slot";
-      slot.textContent = "Coming soon";
-      grid.append(slot);
-      return slot;
-    });
+  const grid = document.getElementById("projectResults");
+  const cards = [...grid.querySelectorAll(".index-card")];
+  // Each card belongs to exactly one industry; filters are built from the cards in page order.
+  const industries = [];
+  cards.forEach((card) => {
+    let industry = industries.find(({ id }) => id === card.dataset.category);
+    if (!industry) {
+      industry = { id: card.dataset.category, label: card.dataset.categoryLabel, cards: [] };
+      industries.push(industry);
+    }
+    industry.cards.push(card);
   });
-  const total = groups.reduce((sum, group) => sum + group.cards.length, 0);
-  const filters = [{ id: "all", label: "All Projects", size: total }, ...groups.map(
-    ({ id, label, cards }) => ({ id, label, size: cards.length }),
+  const projectsPerRow = 3;
+  const slots = Array.from({ length: (projectsPerRow - cards.length % projectsPerRow) % projectsPerRow }, () => {
+    const slot = document.createElement("p");
+    slot.className = "project-slot";
+    slot.textContent = "Coming soon";
+    grid.append(slot);
+    return slot;
+  });
+  const filters = [{ id: "all", label: "All Projects", size: cards.length }, ...industries.map(
+    ({ id, label, cards: members }) => ({ id, label, size: members.length }),
   )].map(({ id, label, size }) => {
     const button = document.createElement("button");
     button.className = "filter";
@@ -108,11 +108,11 @@
       .replace(/\p{Diacritic}/gu, "")
       .toLowerCase()
       .replaceAll("đ", "d");
-  const searchable = new Map(groups.flatMap(({ label, cards }) => cards.map(
-    (card) => [card, normalize(label + " " + [...card.querySelector(".index-card-copy").children]
+  const searchable = new Map(cards.map((card) => [card, normalize(
+    card.dataset.categoryLabel + " " + [...card.querySelector(".index-card-copy").children]
       .filter((field) => !field.classList.contains("artifact-links"))
-      .map((field) => field.textContent).join(" "))],
-  )));
+      .map((field) => field.textContent).join(" "),
+  )]));
 
   function filterProjects() {
     const query = normalize(search.value.trim());
@@ -120,25 +120,25 @@
       const active = filter.dataset.filter === category;
       filter.classList.toggle("active", active);
       filter.setAttribute("aria-pressed", String(active));
+      if (active) {
+        // The tab row scrolls sideways on narrow screens; keep the chosen industry in view.
+        const row = filterRow.getBoundingClientRect();
+        const tab = filter.getBoundingClientRect();
+        if (tab.left < row.left || tab.right > row.right)
+          filterRow.scrollLeft += tab.left - row.left - (row.width - tab.width) / 2;
+      }
     });
-    let count = 0;
-    let groupCount = 0;
-    groups.forEach((group) => {
-      let visible = 0;
-      group.cards.forEach((card) => {
-        card.hidden =
-          (category !== "all" && group.id !== category) ||
-          !searchable.get(card).includes(query);
-        if (!card.hidden) visible += 1;
-      });
-      group.slots.forEach((slot) => { slot.hidden = Boolean(query); });
-      group.element.hidden = visible === 0;
-      group.count.textContent = String(visible);
-      if (visible) groupCount += 1;
-      count += visible;
+    const shown = new Set();
+    cards.forEach((card) => {
+      card.hidden =
+        (category !== "all" && card.dataset.category !== category) ||
+        !searchable.get(card).includes(query);
+      if (!card.hidden) shown.add(card.dataset.category);
     });
+    const count = cards.filter((card) => !card.hidden).length;
+    slots.forEach((slot) => { slot.hidden = Boolean(query) || category !== "all"; });
     empty.hidden = count > 0;
-    filterStatus.textContent = `${count} ${count === 1 ? "project" : "projects"} in ${groupCount} ${groupCount === 1 ? "category" : "categories"}`;
+    filterStatus.textContent = `${count} ${count === 1 ? "project" : "projects"} in ${shown.size} ${shown.size === 1 ? "industry" : "industries"}`;
   }
 
   filterRow.addEventListener("click", (event) => {
@@ -155,27 +155,34 @@
     search.focus();
   });
 
-  // Older links used earlier group names; send them to the industry group that now holds those projects.
+  // #industry-<id> opens one industry. Older #group-* links map to the industry that now holds
+  // those projects, or to all projects when that group mixed several industries.
   const legacyGroups = {
-    "group-product": "group-fintech",
-    "group-healthcare": "group-health-education",
-    "group-education": "group-health-education",
-    "group-web": "group-realestate",
-    "group-creative": "group-lifestyle",
-    "group-mobility": "group-lifestyle",
+    "group-fintech": "fintech",
+    "group-product": "fintech",
+    "group-enterprise": "saas",
+    "group-realestate": "realestate",
+    "group-web": "realestate",
+    "group-healthcare": "healthcare",
+    "group-education": "education",
+    "group-mobility": "automotive",
   };
   function revealAnchor() {
-    const hash = window.location.hash.slice(1);
-    const id = legacyGroups[hash] || hash;
-    const target = id && document.getElementById(id);
-    if (!target) return;
-    const group = target.closest(".project-group");
-    if (group) {
-      if (group.hidden || target.hidden) {
-        category = "all";
-        search.value = "";
-        filterProjects();
-      }
+    const hash = decodeURIComponent(window.location.hash.slice(1));
+    if (!hash) return;
+    const requested = hash.startsWith("industry-") ? hash.slice(9) : legacyGroups[hash];
+    if (requested !== undefined || hash.startsWith("group-")) {
+      category = industries.some(({ id }) => id === requested) ? requested : "all";
+      search.value = "";
+      filterProjects();
+      catalog.scrollIntoView({ block: "start", behavior: "instant" });
+      return;
+    }
+    const target = document.getElementById(hash);
+    if (target && grid.contains(target) && target.closest(".index-card")?.hidden) {
+      category = "all";
+      search.value = "";
+      filterProjects();
       target.scrollIntoView({ block: "start", behavior: "instant" });
     }
   }

@@ -8,7 +8,7 @@ test('experience leads into the open personal-project catalog', async ({page}) =
   await page.goto(baseURL);
   await expect(page.getByRole('heading', {name: 'Personal projects'})).toBeVisible();
   await expect(page.locator('#work .index-card:visible')).toHaveCount(17);
-  await expect(page.locator('#work .project-group:visible')).toHaveCount(6);
+  await expect(page.locator('#work .filter')).toHaveCount(11);
   await expect(page.locator('[data-flagship]')).toHaveCount(0);
   await expect(page.locator('#work [data-filter="ai"], #group-ai')).toHaveCount(0);
   expect(await page.locator('.intro + #work').count()).toBe(1);
@@ -122,19 +122,21 @@ test('all categories filter and reset without losing links', async ({page}) => {
   await expect(page.locator('#work a[href="#"]')).toHaveCount(0);
 });
 
-test('legacy category deep links restore visible project groups', async ({page}) => {
-  await page.goto(baseURL+'/#group-realestate');
-  await expect(page.locator('#group-realestate')).toBeVisible();
+test('industry deep links open one industry and legacy group links still resolve', async ({page}) => {
+  await page.goto(baseURL+'/#industry-realestate');
+  await expect(page.locator('[data-filter="realestate"]')).toHaveAttribute('aria-pressed','true');
+  await expect(page.locator('#work .index-card:visible')).toHaveCount(3);
   await expect(page.locator('#work [data-project="qtsc"] [data-artifact-kind="case"]')).toBeVisible();
-  await page.locator('[data-filter="fintech"]').click();
-  await expect(page.locator('#group-realestate')).toBeHidden();
+  await expect(page.locator('#work')).toBeInViewport();
   await page.evaluate(() => { location.hash='group-commerce'; });
-  await expect(page.locator('#group-realestate')).toBeVisible();
-  await page.goto(baseURL+'/#group-web');
-  await expect(page.locator('#group-realestate')).toBeInViewport();
+  await expect(page.locator('[data-filter="all"]')).toHaveAttribute('aria-pressed','true');
+  await expect(page.locator('#work .index-card:visible')).toHaveCount(17);
   await page.goto(baseURL+'/#group-product');
-  await expect(page.locator('#group-fintech')).toBeInViewport();
-  await expect(page.locator('#work [data-filter]')).toHaveText(['All Projects17','Fintech3','B2B & Industrial3','Health & Education2','Retail3','Real Estate3','Lifestyle3']);
+  await expect(page.locator('[data-filter="fintech"]')).toHaveAttribute('aria-pressed','true');
+  await expect(page.locator('#work [data-project="sentry"]')).toBeVisible();
+  await page.goto(baseURL+'/#industry-unknown');
+  await expect(page.locator('#work .index-card:visible')).toHaveCount(17);
+  await expect(page.locator('#work [data-filter]')).toHaveText(['All Projects17','Fintech & Banking3','B2B SaaS2','Real Estate3','E-commerce3','Healthcare1','Education1','Industrial1','Restaurant & Hotel1','Automotive1','Culture & Arts1']);
 });
 
 test('mobile menu supports dismissal, Escape focus recovery and navigation', async ({page}) => {
@@ -346,10 +348,12 @@ test('each listed project case appears in exactly one classified catalog entry',
   const actual=await page.locator('#work .index-card [data-artifact-kind="case"]').evaluateAll(links=>links.map(a=>a.getAttribute('href')).sort());
   expect(actual).toEqual(expected);
   await expect(page.locator('#work .index-card:visible')).toHaveCount(expected.length);
-  await expect(page.locator('#work .project-group:visible')).toHaveCount(6);
-  await expect(page.locator('#group-fintech [data-project="sentry"]')).toHaveCount(1);
-  await expect(page.locator('#group-health-education [data-project="vas-education"]')).toHaveCount(1);
-  await expect(page.locator('#filterStatus')).toHaveText('17 projects in 6 categories');
+  const industries = await page.locator('#work .index-card').evaluateAll(cards => cards.map(card => card.dataset.category));
+  expect(industries.every(Boolean)).toBe(true);
+  expect(new Set(industries).size).toBe(10);
+  await expect(page.locator('#work [data-project="sentry"][data-category="fintech"]')).toHaveCount(1);
+  await expect(page.locator('#work [data-project="vas-education"][data-category="education"]')).toHaveCount(1);
+  await expect(page.locator('#filterStatus')).toHaveText('17 projects in 10 industries');
   await expect(page.locator('#work .project-slot:visible')).toHaveCount(1);
   for (const grid of await page.locator('#work .index-grid').all()) {
     expect((await grid.locator(':scope > *').count()) % 3).toBe(0);
@@ -371,7 +375,7 @@ test('search combines with category filtering and recovers from no results',asyn
   await expect(page.locator('[data-project="atelier"]')).toBeVisible();
   await search.fill('atelier');
   await expect(page.locator('.index-card:visible')).toHaveCount(1);
-  await page.locator('[data-filter="enterprise"]').click();
+  await page.locator('[data-filter="saas"]').click();
   await expect(page.locator('#catalogEmpty')).toBeVisible();
   await expect(page.locator('.index-card:visible')).toHaveCount(0);
   await page.getByRole('button',{name:'Clear filters'}).click();
@@ -379,7 +383,7 @@ test('search combines with category filtering and recovers from no results',asyn
   await expect(search).toBeFocused();
   await expect(page.locator('.index-card:visible')).toHaveCount(17);
   await expect(page.locator('#catalogEmpty')).toBeHidden();
-  await page.locator('[data-filter="enterprise"]').click();
+  await page.locator('[data-filter="saas"]').click();
   await search.fill('flowcrm');
   await expect(page.locator('.index-card:visible')).toHaveCount(1);
   await expect(page.locator('[data-project="flowcrm"]')).toBeVisible();
