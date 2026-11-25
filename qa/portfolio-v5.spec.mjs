@@ -72,6 +72,11 @@ const criticalCaseStudies = [
 ];
 
 const seriousAxeViolations = async page => {
+  // Let finite entrance animations settle first (e.g. .case-thesis fades in over ~1 s). Otherwise Axe can
+  // measure half-transparent text on a fast runner. The settled screen is still checked in full.
+  await page.evaluate(() => Promise.all(document.getAnimations()
+    .filter(a => a.playState === 'running' && a.effect?.getComputedTiming().iterations !== Infinity)
+    .map(a => Promise.race([a.finished.catch(() => {}), new Promise(r => setTimeout(r, 3000))]))));
   const results = await new AxeBuilder({ page }).analyze();
   return results.violations.filter(v => ['serious', 'critical'].includes(v.impact));
 };
