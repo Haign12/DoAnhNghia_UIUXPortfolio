@@ -90,7 +90,7 @@ test('case-study artifact registry preserves live → figma → source order wit
 
   const samples = [
     ['case-study-nova.html', ['live', 'figma', 'source']],
-    ['case-study-qtsc.html', ['live', 'figma', 'source']],
+    ['case-study-qtsc.html', ['live', 'source']], // Figma removed 2026-11-25: the file showed the old QTSC concept, not Northbank
     ['case-study-atelier.html', ['live', 'figma', 'source']],
   ];
 

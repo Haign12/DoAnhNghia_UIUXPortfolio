@@ -44,7 +44,7 @@
     'case-study-lava.html': { live:'https://ngh1aa.github.io/Lava/', source:'https://github.com/Ngh1aa/Lava' },
     'case-study-aegis.html': { live:'https://ngh1aa.github.io/Aegis/', source:'https://github.com/Ngh1aa/Aegis' },
     'case-study-vas-education.html': { live:'https://redesign-vas.vercel.app/', figma:'https://www.figma.com/design/E07BqE4X8apHhziPardmDG/RedesignVAS?m=auto&t=LykADgxvJ62WCIu7-1', source:'https://github.com/Ngh1aa/RedesignVAS' },
-    'case-study-qtsc.html': { live:'https://ngh1aa.github.io/QTSC/', figma:'https://www.figma.com/design/wugoCyDEEfzSgu0gQoyum5/QTSC?node-id=0-1&t=LykADgxvJ62WCIu7-1', source:'https://github.com/Ngh1aa/QTSC' },
+    'case-study-qtsc.html': { live:'https://ngh1aa.github.io/QTSC/', source:'https://github.com/Ngh1aa/QTSC' },
     'case-study-violet-marketplace.html': { live:'https://violet-marketplace.vercel.app/', figma:'https://www.figma.com/design/tPghPU31brDIbky1M6MCCC/violet?t=LykADgxvJ62WCIu7-1', source:'https://github.com/Ngh1aa/VioletMarketplace' },
     'case-study-voltis.html': { live:'https://voltis-one.vercel.app/', figma:'https://www.figma.com/design/iS0ur2VbuhnLAfSHasnYgp/TRUST.vn---Layout-Website-Test---%C4%90%E1%BB%97-Anh-Ngh%C4%A9a?m=auto&t=LykADgxvJ62WCIu7-1', source:'https://github.com/Ngh1aa/Voltis' },
     'case-study-cennext.html': { live:'https://cennext-b2b-prototype.vercel.app/', figma:'https://www.figma.com/design/RVcp6uzpJvTMHtlS7ilQb7/CenNext---Web-Designer-Test---Do-Anh-Nghia?m=auto&t=LykADgxvJ62WCIu7-1', source:'https://github.com/Ngh1aa/cennext-b2b-prototype' },
