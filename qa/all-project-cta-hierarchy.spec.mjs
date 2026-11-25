@@ -2,10 +2,12 @@ import fs from 'node:fs';
 import { test, expect } from '@playwright/test';
 
 const baseURL = process.env.PORTFOLIO_BASE_URL || 'http://127.0.0.1:4173';
+// Updated 2026-11-25 for the home page shipped on 2026-11-20 (1bdc791, 8ded41a): 4 cards in Selected work (#work),
+// 13 in More projects (#more-work); filters and search act on More projects only.
 
 test('catalog links to real case studies and sources with optional Figma', async ({page, request}) => {
   await page.goto(baseURL);
-  const cards = page.locator('#work .index-card');
+  const cards = page.locator('.index-card');
   await expect(cards).toHaveCount(17);
   for (const card of await cards.all()) {
     await expect(card.locator('[data-artifact-kind="source"]')).toHaveAttribute('href', /^https:\/\/github\.com\/Ngh1aa\//);
@@ -31,7 +33,7 @@ test('every supporting project card uses case → live → figma → source hier
   await page.setViewportSize({ width: 1440, height: 1100 });
   await page.goto(`${baseURL}/`, { waitUntil: 'domcontentloaded' });
 
-  const cards = await page.locator('#work .project-artifact-actions').evaluateAll((blocks) => blocks.map((block) => {
+  const cards = await page.locator('.index-card .project-artifact-actions').evaluateAll((blocks) => blocks.map((block) => {
     const card = block.closest('article');
     const actions = [...block.querySelectorAll('a')];
     return {
@@ -64,7 +66,7 @@ test('mobile keeps one dominant case CTA and wraps artifact links cleanly', asyn
   await page.setViewportSize({ width: 390, height: 844 });
   await page.goto(`${baseURL}/`, { waitUntil: 'domcontentloaded' });
 
-  const blocks = await page.locator('#work .project-artifact-actions').evaluateAll((nodes) => nodes.map((block) => {
+  const blocks = await page.locator('.index-card .project-artifact-actions').evaluateAll((nodes) => nodes.map((block) => {
     const primary = block.querySelector('.project-artifact-primary');
     const blockBox = block.getBoundingClientRect();
     const primaryBox = primary?.getBoundingClientRect();
@@ -90,7 +92,7 @@ test('case-study artifact registry preserves live → figma → source order wit
 
   const samples = [
     ['case-study-nova.html', ['live', 'figma', 'source']],
-    ['case-study-qtsc.html', ['live', 'figma', 'source']],
+    ['case-study-qtsc.html', ['live', 'source']], // Figma removed 2026-11-25: the file showed the old QTSC concept, not Northbank
     ['case-study-atelier.html', ['live', 'figma', 'source']],
   ];
 

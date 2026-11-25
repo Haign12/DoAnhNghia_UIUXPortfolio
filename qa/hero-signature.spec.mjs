@@ -10,10 +10,19 @@ for (const width of [390, 1440]) {
       await page.emulateMedia({ colorScheme: theme });
       await page.goto(baseURL, { waitUntil: 'networkidle' });
       await expect(page.locator('#hero-title')).toHaveText('Complexity,made clear.');
-      await expect(page.locator('#hero-title em')).toHaveCSS('font-style', 'italic');
+      // TASTE.md: no italic accent inside headings; the Anton display face is set upright.
+      await expect(page.locator('#hero-title em')).toHaveCSS('font-style', 'normal');
       await expect(page.locator('#experience .button')).toBeVisible();
       await expect(page.locator('#experience .button')).toHaveAttribute('href', 'case-study-professional-work.html');
-      expect(await page.locator('#experience article').first().evaluate(el => el.getBoundingClientRect().bottom)).toBeLessThan(width === 390 ? 720 : 650);
+      if (width === 390) {
+        // styles.css (1bdc791): on narrow screens the work comes before the experience list.
+        expect(await page.locator('#selected-title').evaluate(el => el.getBoundingClientRect().bottom)).toBeLessThan(720);
+        const order = await page.evaluate(() => ['#work', '#experience', '#more-work'].map(sel => document.querySelector(sel).getBoundingClientRect().top));
+        expect(order[0]).toBeLessThan(order[1]);
+        expect(order[1]).toBeLessThan(order[2]);
+      } else {
+        expect(await page.locator('#experience article').first().evaluate(el => el.getBoundingClientRect().bottom)).toBeLessThan(650);
+      }
       expect(await page.evaluate(() => document.documentElement.scrollWidth - document.documentElement.clientWidth)).toBeLessThanOrEqual(1);
       await page.screenshot({ path: `qa-artifacts/hero-${width}-${theme}.png` });
     });
@@ -24,7 +33,7 @@ test('reduced motion removes decorative movement without hiding work', async ({ 
   await page.emulateMedia({ reducedMotion: 'reduce' });
   await page.goto(baseURL, { waitUntil: 'networkidle' });
   await expect(page.locator('#hero')).toBeVisible();
-  await expect(page.locator('#work .index-card:visible')).toHaveCount(17);
+  await expect(page.locator('.index-card:visible')).toHaveCount(17); // Selected work + More projects
   const moving = await page.evaluate(() => document.getAnimations().filter(animation => animation.playState === 'running').length);
   expect(moving).toBe(0);
   await expect(page.locator('html')).toHaveCSS('scroll-behavior', 'auto');

@@ -2,9 +2,9 @@
 <html lang="en"><head><script>try{const t=localStorage.getItem("portfolio-theme");document.documentElement.dataset.theme=t==="dark"||t==="light"?t:matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light"}catch{}</script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Flux — B2B Fintech Product Design Case Study | Do Anh Nghia</title>
+    <title>Flux — Spend Requests Product Design Case Study | Do Anh Nghia</title>
     <link rel="icon" href="assets/images/brand/xii-an-light.svg" type="image/svg+xml">
-    <meta name="description" content="Flux case study: a B2B fintech operations concept for international payments, approval policies, spend control and auditable financial decisions.">
+    <meta name="description" content="Flux case study: advances, reimbursements and vendor payments in a small Vietnamese company, with a visible approval chain from request to payout.">
 
 
 
@@ -29,109 +29,146 @@
           <div class="case-identity">
             <div class="case-heading">
               <p class="case-kicker">
-                FINTECH / APPROVALS / SPEND CONTROL / AUDITABILITY
-              </p>
+SPEND REQUESTS / APPROVALS / SME / AUDITABILITY
+</p>
               <h1 class="case-title">Flux</h1>
               <p class="case-thesis">
-                A finance operations concept that keeps
-                <em>payment approvals, permissions and the decision trail in
-                  context.</em>
-              </p>
+A spend-request tool for a small company that keeps
+<em>who approves next, and why, in view from request to payout.</em>
+</p>
             </div>
             <aside class="case-rail">
-              <span class="case-index">SELECTED WORK 02 / 04, INDEPENDENT CONCEPT</span><dl class="case-facts"><div><dt>Role</dt><dd>Product Designer</dd></div><div><dt>Users</dt><dd>Finance managers, CFOs and admins</dd></div><div><dt>Domain</dt><dd>B2B payments and finance operations</dd></div><div><dt>Platform</dt><dd>Web app, working prototype</dd></div><div><dt>Team</dt><dd>Solo, independent concept</dd></div><div><dt>Year</dt><dd>2026</dd></div></dl>
+              <span class="case-index">SELECTED WORK 02 / 04, INDEPENDENT CONCEPT</span><dl class="case-facts"><div><dt>Role</dt><dd>Product Designer</dd></div><div><dt>Users</dt><dd>Employees, team leads, the accountant and the director</dd></div><div><dt>Domain</dt><dd>Advances, reimbursements and vendor payments in a Vietnamese SME</dd></div><div><dt>Platform</dt><dd>Web app, working prototype</dd></div><div><dt>Team</dt><dd>Solo, independent concept</dd></div><div><dt>Year</dt><dd>2026</dd></div></dl>
               <div class="case-hero-actions case-artifact-actions">
                 <a class="case-action case-action-primary" href="https://flux-six-liard.vercel.app/" target="_blank" rel="noopener noreferrer">Live prototype ↗</a><a class="case-action" href="https://github.com/Ngh1aa/Flux" target="_blank" rel="noopener noreferrer">Inspect source ↗</a>
               </div>
             </aside>
           </div>
           <figure class="case-cover">
-            <div class="case-cover-frame">
-              <img src="assets/images/prototype-captures/flux-payments-control-chain.jpg" width="2880" height="1800" alt="Flux payments workspace: payment list with approval stages, and the selected 18,400 US dollar payment showing its control chain from draft to finance manager, CFO and execution, with the next approver named" loading="eager" decoding="async">
-            </div>
-            <figcaption>
-              <span>Browser capture of the working prototype</span><span>Payments with the approval control chain</span>
-            </figcaption>
-          </figure>
-        </header><nav class="case-toc" aria-label="In this case"><span>In this case</span><a href="#case-problem">Problem &amp; role</a><a href="#case-decisions">Design decisions</a><a href="#case-outcome">Evidence &amp; limits</a></nav>
+<div class="case-cover-frame">
+<img src="assets/images/prototype-captures/flux-v2/flux-requests-decision.jpg" width="2880" height="1800" alt="Flux requests in the approver view: a counted Needs approval tab with VND 53,050,000 waiting, a ledger of requests with a mini approval rail per row, and the selected VND 45,000,000 brochure request showing its rule, the rail from draft to team lead, director and payout, and the Approve and Reject buttons above the fold" loading="eager" decoding="async">
+</div>
+<figcaption>
+<span>Browser capture of the working prototype</span><span>Requests, approver view</span>
+</figcaption>
+</figure>
+        </header><nav class="case-toc" aria-label="In this case"><span>In this case</span><a href="#case-problem">Problem &amp; role</a><a href="#case-decisions">Design decisions</a><a href="#case-pivot">What changed</a><a href="#case-outcome">Evidence &amp; limits</a></nav>
 
         <section class="case-section case-story-section" id="case-problem">
-          <header class="case-section-head">
-            <span class="case-section-label">Problem &amp; role</span>
-            <h2>Keep financial control visible as money moves.</h2>
-          </header>
-          <div class="case-section-body">
-            <p>
-              The project brief centres on finance teams managing international
-              payments. A disconnected approval chain makes the next approver,
-              policy trigger and result harder to explain.
-            </p>
-            <p>
-              I owned product design and the working prototype: translating the
-              brief into information architecture, approval workflows,
-              permission rules and explicit operational states.
-            </p>
-          </div>
-        </section>
-        <section class="case-section case-story-section" id="case-decisions">
-          <header class="case-section-head">
-            <span class="case-section-label">Design decisions</span>
-            <h2>Make the control chain understandable.</h2>
-          </header>
-          <div class="case-section-body">
-            <ol class="narrative-decisions">
-              <li>
-                <h3>Keep the payment and its approvals together</h3>
-                <p>
-                  Connect initiation, policy evaluation, sequential review and
-                  execution to one record so context does not disappear between
-                  steps.
-                </p>
-              </li>
-              <li>
-                <h3>Prefer readable rules over a visual node editor</h3>
-                <p>
-                  Use explicit IF/THEN policies and table-first density to
-                  support comparison and audit work without unnecessary
-                  interaction complexity.
-                </p>
-              </li>
-              <li>
-                <h3>Design beyond the happy path</h3>
-                <p>
-                  Treat rejection, expiry, failure and permission denial as
-                  first-class states, alongside role-specific actions and a
-                  retained activity trail.
-                </p>
-              </li>
-            </ol>
-          </div>
-        </section>
-
-        <section class="case-section case-story-section" id="case-outcome">
-          <header class="case-section-head">
-            <span class="case-section-label">Evidence &amp; limits</span>
-            <h2>What is real, and what is not tested yet.</h2>
-          </header>
-          <div class="case-section-body">
-            <div class="case-boundary narrative-boundary">
-              <strong>Scope</strong>
-              <p>
-                Real: a working prototype of the approval model, operational
-                hierarchy and recovery states. Not real: production banking.
-                Finance roles and workflows come from the project brief, not
-                interviews; no finance operator has tested it, and adoption and
-                operational impact are unmeasured.
-              </p>
-            </div>
-            <p class="narrative-reflection">
-              The next test should ask finance operators to explain a blocked
-              payment, make an approval decision and predict the effect of a
-              policy change.
-            </p>
-          </div>
-        </section>
-        <details class="case-evidence-details" id="case-evidence">
+<header class="case-section-head">
+<span class="case-section-label">Problem &amp; role</span>
+<h2>Keep the approval chain visible from request to payout.</h2>
+</header>
+<div class="case-section-body">
+<p>
+In a small company, an employee who needs money for a trip or a supplier
+usually asks in a chat, then waits. The approver decides from a message
+without the rule or the amount history, and an advance can stay open for
+weeks because nobody owns the receipts. This framing is my working
+hypothesis from how such teams commonly operate; I have not interviewed
+users for it yet.
+</p>
+<p>
+Flux follows Minh An Trading, a fictional 40-person company in Hồ Chí Minh
+City: Lan in Sales asks, Khoa her team lead approves, the director approves
+anything above VND 20,000,000, and Hà the accountant checks new vendors and
+receipts and pays out. I owned the product design and the working prototype:
+rules, approval flow, states, and the redesign of every screen.
+</p>
+</div>
+</section>
+<section class="case-section case-story-section" id="case-decisions">
+<header class="case-section-head">
+<span class="case-section-label">Design decisions</span>
+<h2>Make the next step obvious.</h2>
+</header>
+<div class="case-section-body">
+<ol class="narrative-decisions">
+<li>
+<h3>Put the decision above the data</h3>
+<p>
+The request detail now reads amount, approval rail, decision, then the
+request data. In the first version the rail and the Approve button sat
+below the fold at 1440 × 900, under a block of payment fields; now the
+rail starts at 444 px and Approve at 661 px. A counted
+<em>Needs approval</em> tab with the VND value waiting replaced a strip of
+four metric boxes that repeated the filters.
+</p>
+</li>
+<li>
+<h3>Ask the type first</h3>
+<p>
+A request starts with its type. An advance or a reimbursement is paid to
+the person asking, so the vendor picker disappears; a vendor payment asks
+for the vendor. The form names the rule that applies as soon as an amount
+is typed, and the review step shows the full chain with names.
+</p>
+<figure class="case-shot"><img src="assets/images/prototype-captures/flux-v2/flux-request-review.jpg" width="2880" height="1800" alt="New request dialog on its review step: a vendor payment of VND 24,000,000 to Phương Nam Printing with the approval chain Draft, Team lead Lê Minh Khoa, Director Trần Quốc Bảo, Payout Nguyễn Thu Hà, and Rule 01 Large requests" loading="lazy" decoding="async"><figcaption><strong>The chain before submit.</strong> The person asking sees who will approve and who pays out before the request leaves their hands.</figcaption></figure>
+</li>
+<li>
+<h3>Readable rules over a visual node editor</h3>
+<p>
+Rules stay explicit IF/THEN lines (amount, request type, vendor age), run
+top to bottom, and can be edited, exported and traced in a change history.
+</p>
+</li>
+<li>
+<h3>Close the loop on advances</h3>
+<p>
+An advance is not done when it is paid. Settlements list the receipts
+that settle it, flag a missing receipt, and let the accountant approve or
+reject each one with a reason.
+</p>
+<figure class="case-shot"><img src="assets/images/prototype-captures/flux-v2/flux-settlements.jpg" width="2880" height="1800" alt="Settlements screen: receipts with Needs review, Missing receipt and Approved states, VND amounts, and the selected hotel receipt that settles advance REQ-2038 with its file, checks and review rail" loading="lazy" decoding="async"><figcaption><strong>Receipts against an advance.</strong> Each receipt says which advance it settles; a missing one is a state, not a footnote.</figcaption></figure>
+</li>
+</ol>
+<figure class="case-shot case-shot--narrow"><img src="assets/images/prototype-captures/flux-v2/flux-requests-mobile.jpg" width="780" height="1688" alt="Flux requests on a 390 pixel phone: counted status tabs, then a two-line ledger list with purpose, payee, status, VND amount and a mini approval rail per request" loading="lazy" decoding="async"><figcaption><strong>Phones get a ledger list.</strong> Two lines per request instead of a table cut at the right edge.</figcaption></figure>
+</div>
+</section>
+<section class="case-section case-story-section" id="case-pivot">
+<header class="case-section-head">
+<span class="case-section-label">What changed</span>
+<h2>I moved the product to a setting people know.</h2>
+</header>
+<div class="case-section-body">
+<p>
+The first version of Flux was a cross-border treasury console for a holding
+group: five currencies, FX cost, SWIFT and company cards. It was hard to
+judge for anyone outside treasury, including me, and I could not test it with
+people I can reach. In November 2026 I moved the content to advances and
+reimbursements in a small Vietnamese company.
+</p>
+<p>
+<strong>Kept:</strong> the approval mechanics, the rule builder, the Approval
+Rail and the visual system. <strong>Removed:</strong> multi-currency, FX and
+the Cards screen. <strong>Cost:</strong> new seed data, new rules, and
+rewriting the browser tests for every flow; the 17 flow tests pass on the
+new content.
+</p>
+</div>
+</section>
+<section class="case-section case-story-section" id="case-outcome">
+<header class="case-section-head">
+<span class="case-section-label">Evidence &amp; limits</span>
+<h2>What is real, and what is not tested yet.</h2>
+</header>
+<div class="case-section-body">
+<div class="case-boundary narrative-boundary">
+<strong>Scope</strong>
+<p>
+Real: a working prototype of requests, rules, approvals, payouts, receipts,
+funds, team roles and reports, with 17 browser flow tests. Not real: a
+backend, bank connections or payroll. The company, people and amounts are
+fictional, and no employee, team lead or accountant has tested it yet.
+</p>
+</div>
+<p class="narrative-reflection">
+The first test should ask office staff and accountants to say who approves a
+request next and why, and to settle an advance that is missing a receipt.
+</p>
+</div>
+</section>
+<details class="case-evidence-details" id="case-evidence">
           <summary>
             Evidence details and validation plan
             <span aria-hidden="true">+</span>
@@ -162,6 +199,7 @@
                       stakeholder team is documented in this public case.
                     </p>
                   </article>
+                  <article class="a27-decision-item" data-a27-field="CONSTRAINT"><span>CONSTRAINT</span><p>The content had to move from cross-border treasury to SME spend requests without changing the approval mechanics, and every browser flow test had to keep passing.</p></article>
                   <article class="a27-decision-item" data-a27-field="OPTIONS">
                     <span>OPTIONS</span>
                     <p>
@@ -202,19 +240,19 @@
                     </p>
                   </article>
                   <article class="a27-decision-item" data-a27-field="WHAT WENT WRONG">
-                    <span>WHAT WENT WRONG</span>
-                    <p>
-                      NOT AVAILABLE — no verified failure, rejected release or
-                      project pivot is documented in this public case.
-                    </p>
-                  </article>
+<span>WHAT WENT WRONG</span>
+<p>
+Project pivot: the first treasury version was too far from users I can reach
+to test; the content moved to SME spend requests while the approval model
+and visual system stayed.
+</p>
+</article>
                   <article class="a27-decision-item" data-a27-field="EVIDENCE">
-                    <span>EVIDENCE</span>
-                    <p>
-                      PLANNED / NOT MEASURED. Baseline: Needs first operations
-                      benchmark.
-                    </p>
-                  </article>
+<span>EVIDENCE</span>
+<p>
+PLANNED / NOT MEASURED. Baseline: Needs a first test with office staff and accountants.
+</p>
+</article>
                   <article class="a27-decision-item" data-a27-field="NEXT DECISION">
                     <span>NEXT DECISION</span>
                     <p>
@@ -235,17 +273,13 @@
               <div class="case-section-body">
                 <div class="case-evidence-strip">
                   <div>
-                    <span>Business / product tension</span><strong>Operational speed vs treasury control</strong><small>The product value is faster liquidity/settlement
-                      decisions without hiding FX exposure, reserves or approval
-                      consequence.</small>
+                    <span>Business / product tension</span><strong>Speed of asking vs control of spending</strong><small>People should get money quickly without approvers losing the rule, the amount history or who is next.</small>
                   </div>
                   <div>
-                    <span>State / system depth</span><strong>Beyond the happy path</strong><small>Failure and recovery states remain first-class because a
-                      treasury tool cannot treat settlement exceptions as edge
-                      decoration.</small>
+                    <span>State / system depth</span><strong>Beyond the happy path</strong><small>Rejection, cancellation, missing receipts and payout failure are first-class states, not edge cases.</small>
                   </div>
                   <div>
-                    <span>Validation</span><strong>Not tested with users yet</strong><small>No finance-operations user has tested the prototype.</small>
+                    <span>Validation</span><strong>Not tested with users yet</strong><small>No employee, team lead or accountant has tested the prototype.</small>
                   </div>
                   <div>
                     <span>Next proof</span><strong>Run the first test</strong><small>Run the stated task/benchmark and update the case only
@@ -264,22 +298,19 @@
                 <div class="case-boundary">
                   <strong>TARGET — NOT A RESULT</strong>
                   <p>
-                    ≥ 4/5 participants correctly explain route status and
-                    recover a failed settlement path. This is a decision
+                    ≥ 4/5 participants correctly say who approves a request next and why, and settle an advance that is missing a receipt. This is a decision
                     threshold for future validation, not a measured outcome.
                   </p>
                 </div>
                 <div class="case-evidence-strip">
                   <div>
-                    <span>Primary target</span><strong>≥ 4/5 participants correctly explain route status and
-                      recover a failed settlement path</strong><small>Predefined before outcome evidence.</small>
+                    <span>Primary target</span><strong>≥ 4/5 participants correctly say who approves a request next and why, and settle an advance that is missing a receipt</strong><small>Predefined before outcome evidence.</small>
                   </div>
                   <div>
-                    <span>Metrics</span><strong>Route comprehension / recovery success / time to
-                      resolution</strong><small>Behavior + attitude where applicable.</small>
+                    <span>Metrics</span><strong>Next-approver comprehension / settlement success / time to decide</strong><small>Behavior + attitude where applicable.</small>
                   </div>
                   <div>
-                    <span>Baseline needed</span><strong>Needs first operations benchmark</strong><small>No invented before/after delta.</small>
+                    <span>Baseline needed</span><strong>Needs a first test with office staff and accountants</strong><small>No invented before/after delta.</small>
                   </div>
                   <div>
                     <span>Evidence state</span><strong>Planned, not measured</strong><small>Promote only from traceable evidence.</small>
