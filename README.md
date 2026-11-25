@@ -7,7 +7,7 @@ This repository contains my product design portfolio: product reasoning, UX syst
 ## Portfolio
 
 - Live portfolio: https://do-anh-nghia-uiux-portfolio.vercel.app/
-- Canonical CV: `Do_Anh_Nghia_Product_Designer_CV.pdf`, built from `cv/main.typ` with `typst compile --font-path cv/fonts cv/main.typ Do_Anh_Nghia_Product_Designer_CV.pdf`. `Do_Anh_Nghia_UIUXDesigner_CV.pdf` is kept as an identical copy so links shared before the rename still open the current CV.
+- Canonical CV: `Do_Anh_Nghia_UIUXDesigner_CV.pdf`, built from `cv/main.typ` with `typst compile --font-path cv/fonts cv/main.typ Do_Anh_Nghia_UIUXDesigner_CV.pdf`. `Do_Anh_Nghia_UIUXDesigner_CV.pdf` is kept as an identical copy so links shared before the rename still open the current CV.
 - LinkedIn: https://www.linkedin.com/in/ginan12/
 
 ## GitHub identity

@@ -123,7 +123,7 @@
       "case_class": "SUPPORTING CASE · B2B SPEND REQUESTS",
       "role": "Product designer · prototype author",
       "team": "Independent project; no separate PM, engineering or stakeholder team is documented in this public case.",
-      "constraint": "NOT EXPLICIT — the case describes the solution, but the governing product or technical constraint is not isolated as a decision input.",
+      "constraint": "The content had to move from cross-border treasury to SME spend requests without changing the approval mechanics, and every browser flow test had to keep passing.",
       "options": "3 documented directions/choices: Visual node-editor policy builder / Restricted accent color / Role + permission pressure",
       "decision": "Restricted accent color — Navy and semantic statuses carry meaning without making every surface compete for attention.",
       "tradeoff": "Explicit trade-off section: Operational clarity beats consumer-fintech decoration",
