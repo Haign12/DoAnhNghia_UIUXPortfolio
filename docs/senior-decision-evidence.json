@@ -120,7 +120,7 @@
     {
       "project": "Flux",
       "surface": "case-study-flux.html",
-      "case_class": "SUPPORTING CASE · B2B FINTECH",
+      "case_class": "SUPPORTING CASE · B2B SPEND REQUESTS",
       "role": "Product designer · prototype author",
       "team": "Independent project; no separate PM, engineering or stakeholder team is documented in this public case.",
       "constraint": "NOT EXPLICIT — the case describes the solution, but the governing product or technical constraint is not isolated as a decision input.",
@@ -129,15 +129,15 @@
       "tradeoff": "Explicit trade-off section: Operational clarity beats consumer-fintech decoration",
       "engineering": "Implementation reality: Independent concept + working prototype. No verified engineering-collaboration record is present in this public case.",
       "system_impact": "Local component, state or system implications are documented in the case; downstream production impact is not measured.",
-      "what_went_wrong": "NOT AVAILABLE — no verified failure, rejected release or project pivot is documented in this public case.",
-      "evidence": "PLANNED / NOT MEASURED. Baseline: Needs first operations benchmark.",
+      "what_went_wrong": "Project pivot: the first treasury version was too far from users I can reach to test; the content moved to SME spend requests while the approval model and visual system stayed.",
+      "evidence": "PLANNED / NOT MEASURED. Baseline: Needs a first test with office staff and accountants.",
       "next_decision": "Run the first benchmark against the predefined A26 target; if the threshold is missed, revise the selected model before adding more polish or scope.",
       "audit": {
         "options_documented": true,
         "tradeoff_documented": true,
         "engineering_boundary_documented": false,
         "team_documented": false,
-        "failure_or_pivot_documented": false,
+        "failure_or_pivot_documented": true,
         "team_classification_source": "case class / implementation reality; collaborator identities remain unverified"
       }
     },

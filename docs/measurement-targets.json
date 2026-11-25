@@ -47,9 +47,9 @@
     {
       "project": "Flux",
       "surface": "case-study-flux.html",
-      "target": "≥ 4/5 participants correctly explain route status and recover a failed settlement path",
-      "metric": "Route comprehension · recovery success · time to resolution",
-      "baseline": "Needs first operations benchmark",
+      "target": "≥ 4/5 participants correctly say who approves a request next and why, and settle an advance that is missing a receipt",
+      "metric": "Next-approver comprehension · settlement success · time to decide",
+      "baseline": "Needs a first test with office staff and accountants",
       "evidence_state": "PLANNED / NOT MEASURED"
     },
     {

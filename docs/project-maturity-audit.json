@@ -81,8 +81,8 @@
       "artifact_maturity_level": 4,
       "role": "Product Designer",
       "mode": "Independent concept",
-      "scope": "Treasury IA · states · prototype",
-      "complexity": "Multi-currency operations + settlement",
+      "scope": "Spend request IA · states · prototype",
+      "complexity": "Approval rules + advances and receipt settlement",
       "public_evidence": "Case · Live · Figma",
       "remaining_gaps": [
         "BUSINESS_CONTEXT_NEEDS_EXPLICIT_FRAME",
