@@ -188,26 +188,26 @@
       }
     },
     {
-      "project": "QTSC",
+      "project": "Northbank",
       "surface": "case-study-qtsc.html",
-      "case_class": "06 / 09 · INDEPENDENT REDESIGN",
-      "role": "UI/UX Designer",
+      "case_class": "INDEPENDENT REDESIGN · FICTIONAL CLIENT",
+      "role": "Product Designer",
       "team": "Independent project; no separate PM, engineering or stakeholder team is documented in this public case.",
-      "constraint": "NOT EXPLICIT — the case describes the solution, but the governing product or technical constraint is not isolated as a decision input.",
-      "options": "NOT DOCUMENTED — the selected direction is visible, but a verified alternative set is not recorded.",
-      "decision": "NOT EXPLICIT — implemented direction exists, but the case does not yet isolate one decision and its rationale.",
-      "tradeoff": "NOT DOCUMENTED — no verified downside or cost of the selected direction is stated explicitly.",
+      "constraint": "No real organisation's name, tenants or images may be published, and every existing flow and its browser test had to keep working.",
+      "options": "Two home directions at a review gate: a warm editorial style that evolved the old look, and a task-first green style. A third, minimal architectural style was added later.",
+      "decision": "Build the warm direction across all pages, then switch to the minimal architectural style by changing tokens, shared component rules and the home page only.",
+      "tradeoff": "Without an accent colour, status and calls to action rely on weight, rules and black buttons; inner pages keep the first direction's layouts rather than bespoke ones.",
       "engineering": "Implementation reality: Static interactive prototype. No verified engineering-collaboration record is present in this public case.",
-      "system_impact": "Local component, state or system implications are documented in the case; downstream production impact is not measured.",
-      "what_went_wrong": "NOT AVAILABLE — no verified failure, rejected release or project pivot is documented in this public case.",
+      "system_impact": "CSS cut from 7,378 to 760 lines and from 1,619 to 5 !important; one source for the header and footer. Production impact is not measured.",
+      "what_went_wrong": "Project pivot: the first concept used a real organisation's name, tenants and hotlinked photos, and was rebuilt as a fictional park. The first visual direction was replaced the same day.",
       "evidence": "PLANNED / NOT MEASURED. Baseline: Needs first usability benchmark.",
-      "next_decision": "Run the first benchmark against the predefined A26 target; if the threshold is missed, revise the selected model before adding more polish or scope.",
+      "next_decision": "Run the first benchmark against the predefined A26 target; if the threshold is missed, revise the routing and the Space filters before adding more pages.",
       "audit": {
-        "options_documented": false,
-        "tradeoff_documented": false,
+        "options_documented": true,
+        "tradeoff_documented": true,
         "engineering_boundary_documented": false,
         "team_documented": false,
-        "failure_or_pivot_documented": false
+        "failure_or_pivot_documented": true
       }
     },
     {

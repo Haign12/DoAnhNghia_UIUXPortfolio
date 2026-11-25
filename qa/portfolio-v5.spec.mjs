@@ -54,7 +54,7 @@ const criticalCaseStudies = [
   { path: 'case-study-capital-place.html', heading: 'Capital Place' },
   { path: 'case-study-lava.html', heading: 'Lava' },
   { path: 'case-study-aegis.html', heading: 'Aegis' },
-  { path: 'case-study-qtsc.html', heading: 'QTSC' },
+  { path: 'case-study-qtsc.html', heading: 'Northbank' }, // renamed 2026-11-25: QTSC concept rebuilt as the fictional Northbank park
   { path: 'case-study-nova.html', heading: 'Nova' },
   { path: 'case-study-sentry.html', heading: 'Sentry' },
   { path: 'case-study-flux.html', heading: 'Flux' },

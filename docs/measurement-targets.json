@@ -69,10 +69,10 @@
       "evidence_state": "DIRECT_USER_ASYNC_RETEST_SELF_REPORT"
     },
     {
-      "project": "QTSC",
+      "project": "Northbank",
       "surface": "case-study-qtsc.html",
-      "target": "≥ 4/5 participants locate the relevant service/information path and identify the correct next action",
-      "metric": "Findability · task completion · navigation errors",
+      "target": "≥ 4/5 participants find a unit for a 20-person team and book a visit, and find a member company by sector",
+      "metric": "Task completion · time to first relevant page · navigation errors",
       "baseline": "Needs first usability benchmark",
       "evidence_state": "PLANNED / NOT MEASURED"
     },
